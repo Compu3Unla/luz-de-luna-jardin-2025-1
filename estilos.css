@@ -1,4 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+
+
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 74px;
+  background-color: #0B53AA;
+  display: flex;
+}
+
+.nav-button {
+  flex: 1;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+   font-family: 'Baloo 2';
+  color: white;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover: fondo claro, texto violeta */
+.nav-button:hover {
+  background-color: white;
+  color: #9243A1;
+}
+
+/* Botón activo (estoy en EDUCACIÓN) */
+.nav-button.active {
+  background-color: #9243A1;
+  color: white;
 }
