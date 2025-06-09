@@ -23,19 +23,19 @@ header {
   font-weight: 600;
   text-decoration: none;
    font-family: 'Baloo 2';
-  color: white;
+  color:aliceblue;
   background-color: transparent;
   transition: background-color 0.3s, color 0.3s;
 }
 
 /* Hover: fondo claro, texto violeta */
 .nav-button:hover {
-  background-color: white;
+  background-color:aliceblue;
   color: #9243A1;
 }
 
 /* Botón activo (estoy en EDUCACIÓN) */
 .nav-button.active {
   background-color: #9243A1;
-  color: white;
+  color: aliceblue;
 }
