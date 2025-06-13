@@ -31,14 +31,14 @@ header {
 
 /* Hover: fondo claro, texto violeta */
 .nav-button:hover {
-  background-color:aliceblue;
+  background-color: #F9FAE5;
   color: #9243A1;
 }
 
 /* Botón activo (que indica en que seccion estas) */
 .nav-button.active {
   background-color: #9243A1;
-  color: aliceblue;
+  color: #F9FAE5;
 }
 
 /*EDUCACIÓN */
