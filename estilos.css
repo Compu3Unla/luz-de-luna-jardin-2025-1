@@ -77,3 +77,66 @@ header {
   margin: 0 auto;
   line-height: 1.6;
 }
+/* Formación Académica */
+.formacion {
+  padding: 60px 20px; 
+}
+
+.formacion h2 {
+  font-family: 'Baloo';
+  font-size: 48px;
+  color: #0B53AA;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Tarjetas de nivel */
+.nivel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #FFFFFF;
+  border: 2px solid #0B53AA;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nivel .imagenes {
+  display: flex;
+  flex: 2;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.nivel .imagenes img {
+  width: calc(50% - 10px);
+  max-height: 140px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.nivel .texto {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nivel .texto h3 {
+  font-family: 'Baloo';
+  font-size: 28px;
+  color: #0B53AA;
+  margin-bottom: 10px;
+}
+
+.nivel .texto p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
