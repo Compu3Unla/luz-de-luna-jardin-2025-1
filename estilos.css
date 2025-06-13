@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo&family=Poppins&display=swap');
 
 * {
   margin: 0;
@@ -22,7 +23,8 @@ header {
   font-size: 24px;
   font-weight: 600;
   text-decoration: none;
-   font-family: 'Baloo 2';
+  font-family: 'Baloo';
+  font-weight: lighter;
   color:aliceblue;
   background-color: transparent;
   transition: background-color 0.3s, color 0.3s;
@@ -34,8 +36,44 @@ header {
   color: #9243A1;
 }
 
-/* Botón activo (estoy en EDUCACIÓN) */
+/* Botón activo (que indica en que seccion estas) */
 .nav-button.active {
   background-color: #9243A1;
   color: aliceblue;
+}
+
+/*EDUCACIÓN */
+
+.pagina-niveles {
+  background-image: url('fondo-niveles.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+.main-niveles {
+  position: relative;
+  text-align: center;
+  padding: 100px 20px 150px;
+  background-color: #0B53AA;
+}
+
+.logo img {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.contenido h2 {
+  font-family: 'Baloo', cursive;
+  font-size: 96px;
+  color: #F9FAE5;
+  margin-bottom: 15px;
+}
+
+.texto-descriptivo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #F9FAE5;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
