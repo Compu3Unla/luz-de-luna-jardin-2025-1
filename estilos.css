@@ -44,11 +44,11 @@ header {
 
 /*EDUCACIÓN */
 
-.pagina-niveles {
-  background-image: url('fondo-niveles.png');
+.contenido {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+  background-image: url('background-niveles-educativos.svg');
 }
 .main-niveles {
   position: relative;
