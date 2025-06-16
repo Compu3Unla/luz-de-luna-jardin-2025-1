@@ -155,5 +155,24 @@ header {
 }
 
 .fondo-actividades {
+  background-image: url(img/fondo-actividades.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
 
+.carrusel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+.elemento {
+  flex: 1 0 auto;
+  margin: 0 50px;
+}
+
+.elemento img {
+  width: 200px;
+  height: 200px;
 }
