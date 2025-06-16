@@ -80,3 +80,25 @@ header {
   margin: 0 auto;
   line-height: 1.6;
 }
+
+/*ACTIVIDEADES*/
+
+.main-actividades {
+  position: relative;
+  text-align: center;
+  padding: 20px 20px 150px;
+  background-color: #0B53AA;
+}
+
+.texto-descriptivo-actividades {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #F9FAE5;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.fondo-actividades {
+
+}
