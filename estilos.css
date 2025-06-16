@@ -20,6 +20,7 @@ header {
   font-weight: 600;
   font-size: 24px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 #menu-de-navegacion a[href="index.html"] {
@@ -50,7 +51,7 @@ header {
   color: #9243A1;
 }
 
-header {
+.header-claro {
   background-color: #F9FAE5;
   width: 1920px;
   height: 74px;
