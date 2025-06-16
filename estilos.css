@@ -14,6 +14,61 @@ header {
   display: flex;
 }
 
+/*paso esto que es del header-menu de navegacion index.html*/
+#menu-de-navegacion a {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 600;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+#menu-de-navegacion a[href="index.html"] {
+  color: #F9FAE5;
+  background-color: #9243A1;
+  display: inline-block;
+  width: 333px;
+  height: 74px;
+  line-height: 74px;
+  text-align: center;
+}
+
+#menu-de-navegacion a[href="contacto.html"],
+#menu-de-navegacion a[href="actividades.html"],
+#menu-de-navegacion a[href="niveles.html"] {
+  color: #0B53AA;
+  display: inline-block;
+  width: 333px;
+  height: 74px;
+  line-height: 74px;
+  text-align: center;
+  background-color: transparent;
+}
+
+#menu-de-navegacion a[href="contacto.html"]:hover,
+#menu-de-navegacion a[href="actividades.html"]:hover,
+#menu-de-navegacion a[href="niveles.html"]:hover {
+  color: #9243A1;
+}
+
+header {
+  background-color: #F9FAE5;
+  width: 1920px;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#menu-de-navegacion ul {
+  display: flex;
+  gap: 196px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+/*aca termina lo del header- menu de navegacion del index.html*/
+
 .nav-button {
   flex: 1;
   height: 70px;
@@ -25,21 +80,21 @@ header {
   text-decoration: none;
   font-family: 'Baloo';
   font-weight: lighter;
-  color:aliceblue;
+  color: #F9FAE5;
   background-color: transparent;
   transition: background-color 0.3s, color 0.3s;
 }
 
 /* Hover: fondo claro, texto violeta */
 .nav-button:hover {
-  background-color:aliceblue;
+  background-color: #F9FAE5;
   color: #9243A1;
 }
 
 /* Botón activo (que indica en que seccion estas) */
 .nav-button.active {
   background-color: #9243A1;
-  color: aliceblue;
+  color: #F9FAE5;
 }
 
 
