@@ -76,7 +76,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
-height: 90vh;
+height: 100vh;
 }
 
 h1 {
@@ -134,6 +134,7 @@ img {
 padding: 40px ;
   max-width: 1300px;
   margin: 0 auto;
+  margin-bottom: 90px;
 }
 
 .texto-jardin {
@@ -149,6 +150,8 @@ padding: 40px ;
 .docente {
   display: flex;
   gap: 20px;
+    border: 3px solid #8A4695;
+      border-radius: 20px;
 }
 .docentes {
   display: grid;
@@ -156,6 +159,12 @@ padding: 40px ;
   gap: 50px;
   max-width: 1380px;
   margin: 0 auto;
+  padding-top: 80px;
+}
+
+.intro-docentes {
+  grid-column: 1 / -1;
+  max-width: 700px;
 }
 
 .texto {
