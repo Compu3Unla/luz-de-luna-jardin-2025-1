@@ -16,8 +16,8 @@
     <a href="#" class="nav-button">NIVELES EDUCATIVOS</a>
   </header>
 
-  <main>
-    <section>
+  <main class="main-contacto">
+    <section class="logo-contacto">
       <img src="logo.svg" alt="Logo Luz de Luna" height="287" width="287">
     </section>
 
@@ -64,12 +64,37 @@
     </section>
 
     <section class="formulario">
+      <form action="mailto:rociosilvacorreo2@gmail.com.ar?subject=Email enviado desde formulario rStudio.design"
+        method="POST" target="_blank" enctype="text/plain">
+        <!-- enctype: tipo de contenido-->
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Sam Torres" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="sam.torres@ejemplo.com" maxlength="30" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" maxlength="600" placeholder="Ideas a concretar" rows="5"
+          required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+
 
     </section>
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer"> <!--copiar tal cual todos-->
+
+    <div class="footer-links">
+      <a href="#"><img src="img/iconos-footer/footer-icono-instagram.svg" alt="icono red social instagram" width="50"
+          height="50"></a>
+      <a href="#"><img src="img/iconos-footer/footer-icono-facebook.svg" alt="icono red social facebook" width="50"
+          height="50"></a>
+      <p>&copy; 2025 Luz de Luna. Todos los derechos reservados</p>
+    </div>
 
   </footer>
 

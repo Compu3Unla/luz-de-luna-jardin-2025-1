@@ -192,12 +192,24 @@ img {
 }
 
 /* cierro main*/
+
 /* abro footer*/
+/* footer completo, hay que copiar y pegar las class y etiquetas tal cual+ <a><img></a> y <p>*/
 .footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
   height: 150px;
   background-color: #0B53AA;
   margin: 0 auto;
 }
+
+.footer-links p {
+  /* color del copy*/
+  color: white;
+}
+
 
 /* cierro footer*/
 /*cierro index.html*/
@@ -238,10 +250,10 @@ img {
 .pagina-niveles {
   margin: 0;
   padding: 0;
-  background-image: url("img/fondo-niveles.png"); 
+  background-image: url("img/fondo-niveles.png");
   width: 1923px;
-  height: 4040px;         
-  background-repeat: no-repeat;   
+  height: 4040px;
+  background-repeat: no-repeat;
 }
 
 .main-niveles {
@@ -446,3 +458,15 @@ img {
 }
 
 
+
+
+.main-contacto {
+  background-color: #F9FAE5;
+}
+
+.logo-contacto {
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
