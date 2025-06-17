@@ -209,8 +209,7 @@ padding: 40px ;
   font-size: 24px;
   font-weight: 600;
   text-decoration: none;
-  font-family: 'Baloo';
-  font-weight: lighter;
+  font-family: 'Baloo 2';
   color: #F9FAE5;
   background-color: transparent;
   transition: background-color 0.3s, color 0.3s;
@@ -232,21 +231,21 @@ padding: 40px ;
 
 /*EDUCACIÓN */
 
-.formacion {
+.pagina-niveles {
   margin: 0;
   padding: 0;
-  background-image: url("img/fondo-niveles.png");
-  background-size: cover;        
-  background-position: center;   
+  background-image: url("img/fondo-niveles.png"); 
+  width: 1923px;
+  height: 4040px;         
   background-repeat: no-repeat;  
   background-attachment: fixed;  
 }
+
 
 .main-niveles {
   position: relative;
   text-align: center;
   padding: 100px 20px 150px;
-  background-color: #0B53AA;
 }
 
 .logo img {
@@ -311,6 +310,7 @@ padding: 40px ;
 .info h3 {
   color: #391C8A;
   font-family: 'Baloo 2', cursive;
+  font-weight: bold;
   font-size: 1.8em;
   margin: 0 0 10px;
   text-align: left; 
