@@ -116,21 +116,28 @@ h6 {
 }
 p {
   font-family: 'Poppins', sans-serif;
-  font-size: 17px;
-  font-weight: 400;     
+  font-size: 17px;   
   line-height: 30px;
   color: #0B53AA;
+}
+
+img {
+  border-radius: 15px; 
 }
 
 .jardin-section {
   display: flex;
   gap: 30px; 
+  justify-content: center;
+ border: 3px solid #8A4695; 
+  border-radius: 20px;
+padding: 40px ;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .texto-jardin {
-  display: flex;
-  flex-direction: column;
-  gap: 20px; 
+  max-width: 640px;
 }
 
 
@@ -138,6 +145,25 @@ p {
  background-color: #0B53AA;
   height: 840px;
 }
+
+.docente {
+  display: flex;
+  gap: 20px;
+}
+.docentes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* cierro main*/
 /*cierro index.html*/
 
