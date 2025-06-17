@@ -69,6 +69,7 @@ header {
   padding: 0;
   justify-content: center;
 }
+
 /*cierro header*/
 /*abro main*/
 #presentación {
@@ -76,7 +77,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
-height: 100vh;
+height: 86vh;
 }
 
 h1 {
@@ -134,18 +135,14 @@ img {
 padding: 40px ;
   max-width: 1300px;
   margin: 0 auto;
-  margin-bottom: 90px;
+  margin-bottom: 80px;
+  margin-top: 150px;
 }
 
 .texto-jardin {
   max-width: 640px;
 }
 
-
-.main-index {
- background-color: #0B53AA;
-  height: 840px;
-}
 
 .docente {
   display: flex;
@@ -160,6 +157,7 @@ padding: 40px ;
   max-width: 1380px;
   margin: 0 auto;
   padding-top: 80px;
+  padding-bottom: 90px;
 }
 
 .intro-docentes {
@@ -173,8 +171,34 @@ padding: 40px ;
   justify-content: center;
 }
 
+.fondo-amarillo {
+  position: absolute;
+  z-index: -1;
+}
+
+.fondo-amarillo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0%;
+}
+
+.main-index {
+  background-color: #0B53AA;
+  position: relative;
+  z-index: 0;
+    padding-bottom: 150px;
+}
+
 /* cierro main*/
-/*cierro index.html*/
+/* abro footer*/
+.footer {
+  height: 150px;
+  background-color: #0B53AA;
+  margin: 0 auto; 
+}
+/* cierro footer*/
+/*cierro index.html*/ 
 
 .nav-button {
   flex: 1;
