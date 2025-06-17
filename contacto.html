@@ -10,53 +10,54 @@
 
 <body>
   <header>
-    <ul id="menu-de-navegacion">
-      <li><a href="index.html">INICIO</a></li>
-      <li><a href="#" class="nav-button active">CONTACTO</a></li>
-      <li><a href="actividades.html">ACTIVIDADES</a></li>
-      <li><a href="educacion.html">NIVELES EDUCATIVOS</a></li>
-    </ul>
+    <a href="#" class="nav-button">INICIO</a>
+    <a href="#" class="nav-button active">CONTACTO</a>
+    <a href="#" class="nav-button">ACTIVIDADES</a>
+    <a href="#" class="nav-button">NIVELES EDUCATIVOS</a>
   </header>
 
-  <main>
-    <section>
+  <main class="main-contacto">
+    <section class="logo-contacto">
       <img src="logo.svg" alt="Logo Luz de Luna" height="287" width="287">
     </section>
 
-    <section class="contacto-contactanos-derecha">
-      <h3>Contactanos</h3>
-      <h6>Estamos para escucharte. Te dejamos las direcciones de nuestras sucursales y nuestras redes sociales, solo
-        estas a un click de nuestro teléfono y nuestro Gmail.</h6>
-      <h6>Más abajo vas a encontrar un formulario, completalo y te contactamos nosotros a vos!<h6>
-          <div class="botones-tel-mail-derecha">
-            <a href="telefono"> <img src="img/iconos-contacto/icono-telefono.svg" alt="icono teléfono" width="86"
-                height="80"></a>
-            <h6>Teléfono</h6>
-            <a href="gmail"> <img src="img/iconos-contacto/icono-gmail.svg" alt="icono gmail" width="86" height="80">
-            </a>
-            <h6>Gmail</h6>
-          </div>
-    </section>
+    <section class="contenedor-contactanos-sucursales">
 
-    <section class="contacto-nuestras-sucursales-izq">
-      <div>
-        <h5>Nuestras sucursales</h5>
+      <div class="contacto-contactanos-derecha">
+        <h3>Contactanos</h3>
+        <h6>Estamos para escucharte. Te dejamos las direcciones de nuestras sucursales y nuestras redes sociales, solo
+          estas a un click de nuestro teléfono y nuestro Gmail.</h6>
+        <h6>Más abajo vas a encontrar un formulario, completalo y te contactamos nosotros a vos!<h6>
+            <div class="botones-tel-mail-derecha">
+              <a href="telefono"> <img src="img/iconos-contacto/icono-telefono.svg" alt="icono teléfono" width="86"
+                  height="80"></a>
+              <h6>Teléfono</h6>
+              <a href="gmail"> <img src="img/iconos-contacto/icono-gmail.svg" alt="icono gmail" width="86" height="80">
+              </a>
+              <h6>Gmail</h6>
+            </div>
       </div>
 
-      <div section="contacto-sedes">
-        <img src="img/sede-lanus-oeste.jpg" alt="Sede Lanús Oeste" width="395.71" height="248">
-        <img src="img/sede-avellaneda.jpg" alt="Sede Avellaneda" width="325.33" height="244">
-      </div>
-      <div class="textos-info-sedes1">
-        <h6>Lanús Oeste</h6>
-        <p>2 de Mayo 2819</p>
-        <p>4225-8712</p>
-      </div>
-      <div class="textos-info-sedes2">
-        <h6>Avellaneda</h6>
-        <p>25 de Mayo 255</p>
-        <p>4222-3385</p>
-      </div>
+      <section class="contacto-nuestras-sucursales-izq">
+        <div>
+          <h5>Nuestras sucursales</h5>
+        </div>
+
+        <div section="contacto-sedes">
+          <img src="img/sede-lanus-oeste.jpg" alt="Sede Lanús Oeste" width="395.71" height="248">
+          <img src="img/sede-avellaneda.jpg" alt="Sede Avellaneda" width="325.33" height="244">
+        </div>
+        <div class="textos-info-sedes1">
+          <h6>Lanús Oeste</h6>
+          <p>2 de Mayo 2819</p>
+          <p>4225-8712</p>
+        </div>
+        <div class="textos-info-sedes2">
+          <h6>Avellaneda</h6>
+          <p>25 de Mayo 255</p>
+          <p>4222-3385</p>
+        </div>
+      </section>
     </section>
 
     <section class="contenedor-section-formulario">
@@ -76,9 +77,12 @@
         <label for="email">Email</label>
         <input type="email" name="email" id="email" placeholder="sam.torres@ejemplo.com" maxlength="30" required>
 
+        <label for="mensaje">Asunto</label>
+        <textarea id="mensaje" name="mensaje" maxlength="50" placeholder="Ej: Inscripción" rows="5" required></textarea>
+
         <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" maxlength="600" placeholder="Ideas a concretar" rows="5"
-          required></textarea>
+        <textarea id="mensaje" name="mensaje" maxlength="600"
+          placeholder="Quiero conocer las fechas de Inscripción para 2026" rows="5" required></textarea>
 
         <button type="submit">Enviar mensaje</button>
       </form>
@@ -88,13 +92,13 @@
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer"> <!--copiar tal cual todos-->
 
     <div class="footer-links">
-      <a href="#"><img src="img/iconos-footer/footer-icono-instagram.svg" alt="icono red social instagram" width="50"
-          height="50"></a>
-      <a href="#"><img src="img/iconos-footer/footer-icono-facebook.svg" alt="icono red social facebook" width="50"
-          height="50"></a>
+      <a href="https://www.instagram.com/jardinluzdeluna/"><img src="img/iconos-footer/footer-icono-instagram.svg"
+          alt="icono red social instagram" width="50" height="50"></a>
+      <a href="https://www.facebook.com/jardinmaternalydeinfantesluzdeluna"><img
+          src="img/iconos-footer/footer-icono-facebook.svg" alt="icono red social facebook" width="50" height="50"></a>
       <p>&copy; 2025 Luz de Luna. Todos los derechos reservados</p>
     </div>
 
