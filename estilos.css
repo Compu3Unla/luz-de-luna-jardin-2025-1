@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Baloo&family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo&family=Baloo+2&family=Poppins&display=swap');
 
 * {
   margin: 0;
@@ -19,6 +20,7 @@ header {
   font-weight: 600;
   font-size: 24px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 #menu-de-navegacion a[href="index.html"] {
@@ -49,7 +51,7 @@ header {
   color: #9243A1;
 }
 
-header {
+.header-claro {
   background-color: #F9FAE5;
   width: 1920px;
   height: 74px;
@@ -96,13 +98,15 @@ header {
   color: #F9FAE5;
 }
 
+
+
 /*EDUCACIÓN */
 
-.pagina-niveles {
-  background-image: url('fondo-niveles.png');
+.contenido {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+  background-image: url("fondo");
 }
 .main-niveles {
   position: relative;
@@ -112,16 +116,13 @@ header {
 }
 
 .logo img {
-  height: 60px;
+  height: 287px;
+  width: 287px;
   margin-bottom: 20px;
 }
 
 .contenido h2 {
-
   font-family: 'Baloo', cursive;
-=======
-  font-family: 'Baloo';
-
   font-size: 96px;
   color: #F9FAE5;
   margin-bottom: 15px;
@@ -135,21 +136,91 @@ header {
   margin: 0 auto;
   line-height: 1.6;
 }
+/* Formación Académica */
+.formacion {
+  padding: 40px;
+  font-family: 'Arial', sans-serif;
+  text-align: left;
+}
 
-/*ACTIVIDEADES*/
+.formacion h2 {
+  font-size: 2.5em;
+  color: #1457A3;
+  margin-bottom: 30px;
+}
+
+.nivel {
+  display: flex;
+  border: 2px solid #0057A3;
+  border-radius: 15px;
+  padding: 20px;
+  gap: 20px;
+  align-items: flex-start;
+  max-width: 1100px; 
+  margin: 0 auto;     
+  background-color: #F9FAE5; 
+}
+
+.imagen-principal {
+  width: 589px;
+  height: 478px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.info {
+  flex: 1;
+  text-align: left; 
+}
+
+.info h3 {
+  color: #391C8A;
+  font-family: 'Baloo 2', cursive;
+  font-size: 1.8em;
+  margin: 0 0 10px;
+  text-align: left; 
+}
+
+.info p {
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+  color: #0B53AA;
+  margin-bottom: 15px;
+}
+
+
+
+.info p span {
+  color: #0071CE;
+  font-weight: bold;
+}
+
+.galeria {
+  display: flex;
+  gap: 10px;
+}
+
+.galeria img {
+  width: 283px;
+  height: 259px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 
 .main-actividades {
   position: relative;
   text-align: center;
-  padding: 20px 20px 150px;
+  padding: 100px 20px 150px;
   background-color: #0B53AA;
+  min-height: 10px;
 }
 
 .texto-descriptivo-actividades {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   color: #F9FAE5;
-  max-width: 650px;
+  max-width: 700px;
   margin: 0 auto;
   line-height: 1.6;
 }
