@@ -192,7 +192,9 @@ img {
 }
 
 /* cierro main*/
+
 /* abro footer*/
+/* footer completo, hay que copiar y pegar las class y etiquetas tal cual+ <a><img></a> y <p>*/
 .footer {
   display: flex;
   justify-content: center;
@@ -204,6 +206,7 @@ img {
 }
 
 .footer-links p {
+  /* color del copy*/
   color: white;
 }
 
@@ -356,4 +359,15 @@ img {
   height: 259px;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.main-contacto {
+  background-color: #F9FAE5;
+}
+
+.logo-contacto {
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 2%;
 }
