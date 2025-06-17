@@ -195,6 +195,14 @@ img {
 
 /* abro footer*/
 /* footer completo, hay que copiar y pegar las class y etiquetas tal cual+ <a><img></a> y <p>*/
+footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .footer {
   display: flex;
   justify-content: center;
@@ -202,7 +210,7 @@ img {
   flex-direction: column;
   height: 150px;
   background-color: #0B53AA;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .footer-links p {
@@ -361,13 +369,34 @@ img {
   border-radius: 10px;
 }
 
+/* HTML CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
 .main-contacto {
   background-color: #F9FAE5;
+  padding: 5%;
 }
 
 .logo-contacto {
   display: flex;
   justify-content: center;
-  padding-top: 1%;
+  padding-top: 2%;
   padding-bottom: 2%;
+}
+
+.contenedor-contactanos-sucursales {
+  display: flex;
+  row-gap: 10%;
+
+}
+
+.contacto-contactanos-derecha {
+  flex-direction: row;
+}
+
+.contacto-nuestras-sucursales-izq {
+  flex-direction: row;
+  border-color: #9243A1;
+  border-radius: 57px;
+  width: 879;
+  height: 480;
 }
