@@ -204,7 +204,7 @@ img {
 
 .nav-button {
   flex: 1;
-  height: 70px;
+  height: 74px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -238,10 +238,10 @@ img {
   margin: 0;
   padding: 0;
   background-image: url("img/fondo-niveles.png");
-  background-size: cover;        
-  background-position: center;   
-  background-repeat: no-repeat;  
-  background-attachment: fixed;  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .main-niveles {
@@ -276,7 +276,7 @@ img {
 /* Formación Académica */
 .formacion {
   padding: 40px;
-  font-family: 'Baloo', cursive; 
+  font-family: 'Baloo', cursive;
   color: #0057A3;
   text-align: left;
 }
