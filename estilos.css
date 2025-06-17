@@ -232,12 +232,16 @@ padding: 40px ;
 
 /*EDUCACIÓN */
 
-.contenido {
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  background-image: url("fondo");
+.formacion {
+  margin: 0;
+  padding: 0;
+  background-image: url("img/fondo-niveles.png");
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;  
+  background-attachment: fixed;  
 }
+
 .main-niveles {
   position: relative;
   text-align: center;
@@ -269,7 +273,8 @@ padding: 40px ;
 /* Formación Académica */
 .formacion {
   padding: 40px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Baloo', cursive; 
+  color: #0057A3;
   text-align: left;
 }
 
