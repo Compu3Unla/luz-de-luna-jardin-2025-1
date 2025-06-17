@@ -253,7 +253,7 @@ footer {
 
 
 
-/* ABRO EDUCACIÓN */
+/* === ABRO EDUCACION === */
 
 .pagina-niveles {
   margin: 0;
@@ -263,6 +263,7 @@ footer {
   height: 4040px;
   background-repeat: no-repeat;
 }
+
 
 .main-niveles {
   position: relative;
@@ -278,6 +279,7 @@ footer {
 
 .contenido h2 {
   font-family: 'Baloo', cursive;
+  font-family: 'Baloo';
   font-size: 96px;
   color: #F9FAE5;
   margin-bottom: 15px;
@@ -296,6 +298,7 @@ footer {
 
 .formacion {
   padding: 40px;
+  padding-top: 100px;
   font-family: 'Baloo', cursive;
   color: #0057A3;
   text-align: left;
@@ -328,6 +331,7 @@ footer {
   height: 478px;
   border-radius: 10px;
   object-fit: cover;
+  box-shadow: 6px 10px rgba(0, 0, 0, 0.1);
 }
 
 .info {
@@ -367,7 +371,108 @@ footer {
   height: 259px;
   object-fit: cover;
   border-radius: 10px;
+  box-shadow: 6px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Carrusel Talleres */
+
+.talleres {
+  color: #F9FAE5;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.talleres h2 {
+  font-size: 70px;
+  font-family: 'Baloo', cursive;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-top: 70px;
+  margin-left: 183px;
+
+}
+
+.talleres h6 {
+  text-align: left;
+  color: #F9FAE5;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5;
+  max-width: 750px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  margin-left: 183px;
+}
+
+.talleres p {
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 750px;
+  text-align: center;
+  color: #F9FAE5;
+}
+
+.talleres p strong {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contenedor-carrusel {
+  display: flex;
+  overflow-x: auto;
+  gap: 40px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 50px 0 20px 250px;
+}
+
+.tarjeta-taller {
+  flex: 0 0 auto;
+  width: 618.93px;
+  height: 779.27px;
+  background-color: #F4EEFC;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  scroll-snap-align: center;
+  box-shadow: 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-taller img {
+  width: 558.38px;
+  height: 539.32px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-taller h3 {
+  font-size: 24px;
+  color: #F9FAE5;
+  background-color: #0B53AA;
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-family: 'Baloo 2', cursive;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.tarjeta-taller p {
+  font-size: 20px;
+  color: #391C8A;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* === CIERRO EDUCACION === */
+
+
 
 /* HTML CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
