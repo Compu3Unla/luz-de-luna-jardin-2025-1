@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Baloo&family=Baloo+2&family=Poppins&display=swap');
 
 * {
@@ -14,7 +12,8 @@ header {
   display: flex;
 }
 
-/*paso esto que es del header-menu de navegacion index.html*/
+/* abro index.html*/
+/* abro header*/
 #menu-de-navegacion a {
   font-family: 'Baloo 2', cursive;
   font-weight: 600;
@@ -36,7 +35,8 @@ header {
 #menu-de-navegacion a[href="contacto.html"],
 #menu-de-navegacion a[href="actividades.html"],
 #menu-de-navegacion a[href="niveles.html"] {
-  color: #0B53AA;
+  color: white;
+  background-color: #0B53AA;
   display: inline-block;
   width: 333px;
   height: 74px;
@@ -53,7 +53,7 @@ header {
 
 .header-claro {
   background-color: #F9FAE5;
-  width: 1920px;
+  width: 100%;
   height: 74px;
   display: flex;
   align-items: center;
@@ -62,22 +62,164 @@ header {
 
 #menu-de-navegacion ul {
   display: flex;
-  gap: 196px;
+  gap: 191px;
   list-style: none;
   margin: 0;
   padding: 0;
   justify-content: center;
 }
-/*aca termina lo del header- menu de navegacion del index.html*/
+
+/*cierro header*/
+/*abro main*/
+#presentación {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  height: 86vh;
+}
+
+h1 {
+  font-family: 'Barrio', cursive;
+  font-size: 220px;
+  color: #F9FAE5;
+}
+
+h3 {
+  font-family: 'Baloo', cursive;
+  font-size: 70px;
+  color: #0B53AA;
+  font-weight: 500;
+}
+
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  color: #F9FAE5;
+}
+
+h5 {
+  font-family: 'Baloo 2', cursive;
+  font-size: 40px;
+  font-weight: 700;
+  color: #391C8A;
+}
+
+h6 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #391C8A;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  color: #0B53AA;
+}
+
+img {
+  border-radius: 15px;
+}
+
+.jardin-section {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  border: 3px solid #8A4695;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  margin-top: 150px;
+}
+
+.texto-jardin {
+  max-width: 640px;
+}
+
+
+.docente {
+  display: flex;
+  gap: 20px;
+  border: 3px solid #8A4695;
+  border-radius: 20px;
+}
+
+.docentes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+
+.intro-docentes {
+  grid-column: 1 / -1;
+  max-width: 700px;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fondo-amarillo {
+  position: absolute;
+  z-index: -1;
+}
+
+.fondo-amarillo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0%;
+}
+
+.main-index {
+  background-color: #0B53AA;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 150px;
+}
+
+/* cierro main*/
+/* abro footer*/
+.footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 150px;
+  background-color: #0B53AA;
+  margin: 0 auto;
+}
+
+.footer-links p {
+  color: white;
+}
+
+
+/* cierro footer*/
+/*cierro index.html*/
 
 .nav-button {
   flex: 1;
-  height: 70px;
+  height: 74px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-family: 'Baloo 2', cursive;
   font-weight: 600;
+  font-size: 24px;
   text-decoration: none;
   font-family: 'Baloo';
   font-weight: lighter;
@@ -100,19 +242,21 @@ header {
 
 
 
-/*EDUCACIÓN */
+/* ABRO EDUCACIÓN */
 
-.contenido {
+.pagina-niveles {
+  margin: 0;
+  padding: 0;
+  background-image: url("img/fondo-niveles.png");
+  width: 1923px;
+  height: 4040px;
   background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  background-image: url("fondo");
 }
+
 .main-niveles {
   position: relative;
   text-align: center;
   padding: 100px 20px 150px;
-  background-color: #0B53AA;
 }
 
 .logo img {
@@ -136,29 +280,36 @@ header {
   margin: 0 auto;
   line-height: 1.6;
 }
+
 /* Formación Académica */
+
 .formacion {
   padding: 40px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Baloo', cursive;
+  color: #0057A3;
   text-align: left;
 }
 
-.formacion h2 {
-  font-size: 2.5em;
+.formacion h3 {
+  font-size: 70px;
   color: #1457A3;
   margin-bottom: 30px;
+  margin-left: 200px;
 }
 
 .nivel {
+  border: 3px solid #0057A3;
   display: flex;
-  border: 2px solid #0057A3;
-  border-radius: 15px;
-  padding: 20px;
-  gap: 20px;
+  gap: 30px;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 1300px;
   align-items: flex-start;
-  max-width: 1100px; 
-  margin: 0 auto;     
-  background-color: #F9FAE5; 
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  background-color: #F9FAE5;
 }
 
 .imagen-principal {
@@ -170,28 +321,30 @@ header {
 
 .info {
   flex: 1;
-  text-align: left; 
+  text-align: left;
 }
 
-.info h3 {
+.info h5 {
   color: #391C8A;
   font-family: 'Baloo 2', cursive;
-  font-size: 1.8em;
+  font-weight: bolder;
+  font-size: 40px;
   margin: 0 0 10px;
-  text-align: left; 
+  text-align: left;
 }
 
 .info p {
-  font-size: 1em;
+  font-size: 20px;
   font-family: 'Poppins', sans-serif;
   color: #0B53AA;
   margin-bottom: 15px;
+  margin-right: 280px;
 }
 
 
 
 .info p span {
-  color: #0071CE;
+  color: #0B53AA;
   font-weight: bold;
 }
 
