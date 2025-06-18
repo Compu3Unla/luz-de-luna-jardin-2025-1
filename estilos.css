@@ -259,7 +259,7 @@ footer {
   margin: 0;
   padding: 0;
   background-image: url("img/fondo-niveles.png");
-  width: 1923px;
+  width: 100%;
   height: 4040px;
   background-repeat: no-repeat;
 }
