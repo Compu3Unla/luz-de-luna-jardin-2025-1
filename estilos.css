@@ -131,22 +131,19 @@ img {
   justify-content: center;
 }
 
-.fondo-fijo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: auto;
-  height: auto;
-}
 
 
 .body-index {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  position: relative;
+  background-image: url("img/fondo-index.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
 
 /* cierro main*/
 
