@@ -40,7 +40,6 @@ h3 {
   font-weight: 500;
 }
 
-
 h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -82,13 +81,12 @@ img {
   border-radius: 20px;
   padding: 40px;
   max-width: 1300px;
-  margin: 0 auto;
-  margin-bottom: 80px;
-  margin-top: 150px;
+  margin: 150px auto 80px auto;
 }
 
 .texto-jardin {
   max-width: 640px;
+  margin: 0 auto;
 }
 
 
@@ -97,6 +95,7 @@ img {
   gap: 20px;
   border: 3px solid #8A4695;
   border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 .docentes {
@@ -105,14 +104,17 @@ img {
   gap: 50px;
   max-width: 1380px;
   margin: 0 auto;
-  padding-top: 80px;
-  padding-bottom: 90px;
+  padding: 80px 20px 120px 20px;
 }
 
 .intro-docentes {
   grid-column: 1 / -1;
   max-width: 700px;
+  margin: 0 0 40px 0; 
+  text-align: left; 
 }
+
+
 
 .texto {
   display: flex;
@@ -120,23 +122,21 @@ img {
   justify-content: center;
 }
 
-.fondo-amarillo {
+.fondo-fijo {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: -1;
-}
-
-.fondo-amarillo img {
-  width: 100%;
+  width: auto;
   height: auto;
-  display: block;
-  border-radius: 0%;
 }
 
-.main-index {
-  background-color: #0B53AA;
+
+.body-index {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   position: relative;
-  z-index: 0;
-  padding-bottom: 150px;
 }
 
 /* cierro main*/
