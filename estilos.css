@@ -12,6 +12,21 @@ header {
   display: flex;
 }
 
+/* abro index.html*/
+/* abro header*/
+
+
+
+/*cierro header*/
+/*abro main*/
+#presentación {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  height: 100vh;
+}
+
 h1 {
   font-family: 'Barrio', cursive;
   font-size: 220px;
@@ -28,7 +43,7 @@ h3 {
 h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 60px;  
   color: #F9FAE5;
 }
 
@@ -39,13 +54,7 @@ h5 {
   color: #391C8A;
 }
 
-p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 17px;
-  line-height: 30px;
-  color: #0B53AA;
-}
-.h6 {
+h6 {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -53,26 +62,15 @@ p {
   color: #391C8A;
 }
 
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  color: #0B53AA;
+}
 
 img {
   border-radius: 15px;
-}
-
-
-.lista-sedes {
-  list-style: none;
-  font-family: 'Poppins', sans-serif;
-  color: #391C8A;
-}
-
-/* abro index.html*/
-
-#presentación {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 60px;
-  height: 100vh;
 }
 
 .jardin-section {
@@ -97,6 +95,7 @@ img {
   gap: 20px;
   border: 3px solid #8A4695;
   border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 .docentes {
@@ -111,9 +110,10 @@ img {
 .intro-docentes {
   grid-column: 1 / -1;
   max-width: 700px;
-  margin: 0 0 40px 0;
-  text-align: left;
+  margin: 0 0 40px 0; 
+  text-align: left; 
 }
+
 
 
 .texto {
@@ -122,18 +122,24 @@ img {
   justify-content: center;
 }
 
+.fondo-fijo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: auto;
+  height: auto;
+}
+
 
 .body-index {
   margin: 0;
   padding: 0;
-  background-image: url("img/fondo-index.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
 }
-/* cierro index*/
+
+/* cierro main*/
 
 /* abro footer*/
 /* footer completo, hay que copiar y pegar las class y etiquetas tal cual+ <a><img></a> y <p>*/
@@ -249,10 +255,6 @@ footer {
 }
 
 .formacion h3 {
-  font-family: 'Baloo', cursive;
-  font-size: 70px;
-  color: #0B53AA;
-  font-weight: 500;
   margin-bottom: 30px;
   margin-left: 200px;
 }
@@ -269,6 +271,7 @@ footer {
   margin: 0 auto;
   margin-bottom: 80px;
   background-color: #F9FAE5;
+  
 }
 
 .imagen-principal {
@@ -285,17 +288,12 @@ footer {
 }
 
 .info h5 {
-  font-family: 'Baloo 2', cursive;
-  font-size: 40px;
-  font-weight: 700;
-  color: #391C8A;
   margin: 0 0 10px;
   text-align: left;
 }
 
 .info p {
   font-size: 20px;
-  font-family: 'Poppins', sans-serif;
   color: #0B53AA;
   margin-bottom: 15px;
   margin-right: 280px;
@@ -353,8 +351,8 @@ footer {
 .talleres p strong {
   font-weight: 700;
   display: block;
-  margin-bottom: 2px;
-  line-height: 1.2;
+  margin-bottom: 2px; 
+  line-height: 1.2; 
 }
 
 .tarjeta-taller {
@@ -378,15 +376,13 @@ footer {
   margin-bottom: 20px;
   box-shadow: 6px 10px rgba(0, 0, 0, 0.1);
 }
-
-.tarjeta-taller h3 {
+.tarjeta-taller h5 {
   font-size: 24px;
   color: #F9FAE5;
   background-color: #0B53AA;
   display: inline-block;
   padding: 8px 14px;
   border-radius: 10px;
-  font-family: 'Baloo 2', cursive;
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -394,12 +390,10 @@ footer {
 .tarjeta-taller p {
   font-size: 20px;
   color: #391C8A;
-  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   max-width: 90%;
   margin: 0 auto;
 }
-
 .carrusel-wrapper {
   overflow-x: auto;
   overflow-y: hidden;
@@ -437,7 +431,6 @@ footer {
 .carrusel-wrapper::-webkit-scrollbar-thumb:hover {
   background-color: #E3E4CB;
 }
-
 /* === CIERRO EDUCACION === */
 
 
@@ -459,42 +452,18 @@ footer {
 
 .contenedor-contactanos-sucursales {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10%;
-  justify-content: center;
+  row-gap: 10%;
+
 }
 
 .contacto-contactanos-derecha {
   flex-direction: row;
-  max-width: 600px;
 }
 
 .contacto-nuestras-sucursales-izq {
-  border: 1px solid #9243A1;
-  padding-top: 1%;
-  padding-left: 3%;
-  padding-bottom: 0%;
-  padding-right: 3%;
-  /* Espacio interno*/
-  border-radius: 57px;
-  /* Opcional: espacio externo arriba y abajo */
   flex-direction: row;
-  max-width: 900px;
+  border-color: #9243A1;
+  border-radius: 57px;
+  width: 879;
   height: 480;
-}
-
-.texto-sucursales {
-  font-family: "Baloo 2";
-  font-size: 24px;
-  color: #391C8A;
-  font-weight: bold;
-  padding-top: 2%;
-}
-
-.info-formulario {
-  font-family: "Poppins";
-  font-weight: medium;
-  font-size: 20px;
-  color: #0B53AA;
-
 }
