@@ -12,21 +12,6 @@ header {
   display: flex;
 }
 
-/* abro index.html*/
-/* abro header*/
-
-
-
-/*cierro header*/
-/*abro main*/
-#presentación {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 60px;
-  height: 100vh;
-}
-
 h1 {
   font-family: 'Barrio', cursive;
   font-size: 220px;
@@ -54,7 +39,13 @@ h5 {
   color: #391C8A;
 }
 
-h6 {
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  color: #0B53AA;
+}
+.h6 {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -62,15 +53,26 @@ h6 {
   color: #391C8A;
 }
 
-p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 17px;
-  line-height: 30px;
-  color: #0B53AA;
-}
 
 img {
   border-radius: 15px;
+}
+
+
+.lista-sedes {
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  color: #391C8A;
+}
+
+/* abro index.html*/
+
+#presentación {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  height: 100vh;
 }
 
 .jardin-section {
@@ -95,7 +97,6 @@ img {
   gap: 20px;
   border: 3px solid #8A4695;
   border-radius: 20px;
-  margin-bottom: 20px;
 }
 
 .docentes {
@@ -110,10 +111,9 @@ img {
 .intro-docentes {
   grid-column: 1 / -1;
   max-width: 700px;
-  margin: 0 0 40px 0; 
-  text-align: left; 
+  margin: 0 0 40px 0;
+  text-align: left;
 }
-
 
 
 .texto {
@@ -122,24 +122,18 @@ img {
   justify-content: center;
 }
 
-.fondo-fijo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: auto;
-  height: auto;
-}
-
 
 .body-index {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  position: relative;
+  background-image: url("img/fondo-index.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-
-/* cierro main*/
+/* cierro index*/
 
 /* abro footer*/
 /* footer completo, hay que copiar y pegar las class y etiquetas tal cual+ <a><img></a> y <p>*/
@@ -361,8 +355,8 @@ footer {
 .talleres p strong {
   font-weight: 700;
   display: block;
-  margin-bottom: 2px; 
-  line-height: 1.2; 
+  margin-bottom: 2px;
+  line-height: 1.2;
 }
 
 .tarjeta-taller {
@@ -386,6 +380,7 @@ footer {
   margin-bottom: 20px;
   box-shadow: 6px 10px rgba(0, 0, 0, 0.1);
 }
+
 .tarjeta-taller h3 {
   font-size: 24px;
   color: #F9FAE5;
@@ -406,6 +401,7 @@ footer {
   max-width: 90%;
   margin: 0 auto;
 }
+
 .carrusel-wrapper {
   overflow-x: auto;
   overflow-y: hidden;
@@ -443,6 +439,7 @@ footer {
 .carrusel-wrapper::-webkit-scrollbar-thumb:hover {
   background-color: #E3E4CB;
 }
+
 /* === CIERRO EDUCACION === */
 
 
@@ -464,228 +461,26 @@ footer {
 
 .contenedor-contactanos-sucursales {
   display: flex;
-  row-gap: 10%;
-
+  flex-wrap: wrap;
+  gap: 10%;
+  justify-content: center;
 }
 
 .contacto-contactanos-derecha {
   flex-direction: row;
+  max-width: 600px;
 }
 
 .contacto-nuestras-sucursales-izq {
-  flex-direction: row;
-  border-color: #9243A1;
+  border: 1px solid #9243A1;
+  padding-top: 1%;
+  padding-left: 3%;
+  padding-bottom: 0%;
+  padding-right: 3%;
+  /* Espacio interno*/
   border-radius: 57px;
-  width: 879;
-  height: 480;
-}
-
-
-
-
-/*ACTIVIDADES*/
-
-.main-actividades {
-  text-align: center;
-  z-index: 10px;
-  background-image: url(img/fondo-actividades.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-}
-
-
-.texto-descriptivo-actividades {
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  color: #F9FAE5;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-.carrusel {
-  position: relative;
-  top: 180px;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: scroll;
-}
-
-.carrusel p {
-  color: #391C8A;
-  font-size: 10px;
-  display: flex;
+  /* Opcional: espacio externo arriba y abajo */
   flex-direction: row;
-  position: relative;
-  left: 100px;
-}
-
-.titulo-actividades h3 {
- font-family: 'Baloo 2', cursive;
- font-size: 40px; 
- font-weight: bolder;
- display: flex;
- justify-content: start;
- position: relative; 
- top: 180px; 
- margin-left: 50px;
-}
-
-.elemento {
-  flex: 1 0 auto;
-  margin: 0 50px;
-}
-
-.elemento img {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 50px;
-  margin-right: 10px;
-  margin: 0px 10px 50px 10px; 
-}
-
-.secciondos-actividades {
-  display: flex;
-  flex-direction: column;
-}
-
-.comunidad-actividades h3{
- font-family: 'Baloo';
- font-size: 70px; 
- color: #0B53AA;
- font-weight: 500;
- display: flex;
- justify-content: flex-start;
- align-items: flex-start;
- position: relative; 
- top: 300px;
- margin-left: 50px;
-}
-
-.comunidad-actividades p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  color: #9243A1;
-  text-align: left;
-  width: 580px;
-  position: relative;
-  top: 300px;
-  margin-left: 50px;
-}
-
-.lado-izquierdouno-act {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  right: 100px;
-  top: 140px;   
-}
-
-.lado-izquierdouno-act img {
-  display: flex;
-  justify-content: flex-start;
-  position: relative;
-  top: 190px;
-  left: 150px;
-  z-index: 20;
-}
-
-.lado-izquierdodos-act {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  right: 100px;
-  bottom: 15px;
-}
-
-.lado-izquierdodos-act img {
-  display: flex;
-  justify-content: flex-start;
-  position: relative;
-  top: 190px;
-  left: 150px;
-  z-index: 20;
-}
-
-.lado-izquierdotres-act {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  right: 100px;
-  bottom: 170px;
-}
-
-.lado-izquierdotres-act img {
-  display: flex;
-  justify-content: flex-start;
-  position: relative;
-  top: 190px;
-  left: 150px;
-  z-index: 20;
-}
-
-
-.contornos-izq { 
-  margin: 0px 0px 50px 50px;
-  border-radius: 8%;
-  width: 400px;
-  border: 5px solid #0B53AA;
-  position: relative;  
-  left: 250px;
-  z-index: 1;
-}
-
-.contornos-izq h5 {
-  font-family: 'Baloo 2', cursive;
-  font-weight: bold;
-  font-size: 35px; 
-  color: #391C8A;
-  text-align: left;
-  margin-left: 70px;
-}
-
-.contornos-izq p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 17px;
-  color: #0B53AA;
-  text-align: left;
-  margin: 0px 0px 10px 70px;
-}
-
-
-.contornos-der { 
-  margin: 0px 0px 50px 50px;
-  border-radius: 8%;
-  width: 400px;
-  border: 5px solid #0B53AA;
-  position: relative;  
-  left: 700px;
-  bottom: 600px;
-  z-index: 1;
-}
-
-.contornos-der h5 {
-  font-family: 'Baloo 2', cursive;
-  font-weight: bold;
-  font-size: 35px; 
-  color: #391C8A;
-  text-align: left;
-  margin-left: 70px;
-}
-
-.contornos-der p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 17px;
-  color: #0B53AA;
-  text-align: left;
-  margin: 0px 0px 10px 70px;
-}
-
-.lado-derecho-act img {
-  position: relative;
-  bottom: 500px;
-  le
+  max-width: 900px;
+  height: 480;
 }
