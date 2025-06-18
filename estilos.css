@@ -209,9 +209,6 @@ footer {
   background-image: url("img/fondo-niveles.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.pagina-niveles {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -273,7 +270,6 @@ footer {
   justify-content: center;
   border-radius: 20px;
   padding: 40px;
-  max-width: 1300px;
   align-items: flex-start;
   max-width: 1400px;
   margin: 0 auto;
@@ -379,7 +375,8 @@ footer {
   box-shadow: 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-.tarjeta-taller img {
+.tarjeta-taller img,
+.tarjeta-taller video {
   width: 558.38px;
   height: 539.32px;
   object-fit: cover;
@@ -387,7 +384,6 @@ footer {
   margin-bottom: 20px;
   box-shadow: 6px 10px rgba(0, 0, 0, 0.1);
 }
-
 .tarjeta-taller h3 {
   font-size: 24px;
   color: #F9FAE5;
