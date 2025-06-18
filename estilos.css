@@ -54,7 +54,7 @@ h5 {
   color: #391C8A;
 }
 
-h6 {
+.h6 {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -72,6 +72,15 @@ p {
 img {
   border-radius: 15px;
 }
+
+/*contacto*/
+.lista-sedes {
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  color: #391C8A;
+}
+
+/*contacto*/
 
 .jardin-section {
   display: flex;
@@ -110,8 +119,8 @@ img {
 .intro-docentes {
   grid-column: 1 / -1;
   max-width: 700px;
-  margin: 0 0 40px 0; 
-  text-align: left; 
+  margin: 0 0 40px 0;
+  text-align: left;
 }
 
 
@@ -359,8 +368,8 @@ footer {
 .talleres p strong {
   font-weight: 700;
   display: block;
-  margin-bottom: 2px; 
-  line-height: 1.2; 
+  margin-bottom: 2px;
+  line-height: 1.2;
 }
 
 .tarjeta-taller {
@@ -384,6 +393,7 @@ footer {
   margin-bottom: 20px;
   box-shadow: 6px 10px rgba(0, 0, 0, 0.1);
 }
+
 .tarjeta-taller h3 {
   font-size: 24px;
   color: #F9FAE5;
@@ -404,6 +414,7 @@ footer {
   max-width: 90%;
   margin: 0 auto;
 }
+
 .carrusel-wrapper {
   overflow-x: auto;
   overflow-y: hidden;
@@ -441,6 +452,7 @@ footer {
 .carrusel-wrapper::-webkit-scrollbar-thumb:hover {
   background-color: #E3E4CB;
 }
+
 /* === CIERRO EDUCACION === */
 
 
@@ -462,18 +474,42 @@ footer {
 
 .contenedor-contactanos-sucursales {
   display: flex;
-  row-gap: 10%;
-
+  flex-wrap: wrap;
+  gap: 10%;
+  justify-content: center;
 }
 
 .contacto-contactanos-derecha {
   flex-direction: row;
+  max-width: 600px;
 }
 
 .contacto-nuestras-sucursales-izq {
-  flex-direction: row;
-  border-color: #9243A1;
+  border: 1px solid #9243A1;
+  padding-top: 1%;
+  padding-left: 3%;
+  padding-bottom: 0%;
+  padding-right: 3%;
+  /* Espacio interno*/
   border-radius: 57px;
-  width: 879;
+  /* Opcional: espacio externo arriba y abajo */
+  flex-direction: row;
+  max-width: 900px;
   height: 480;
+}
+
+.texto-sucursales {
+  font-family: "Baloo 2";
+  font-size: 24px;
+  color: #391C8A;
+  font-weight: bold;
+  padding-top: 2%;
+}
+
+.info-formulario {
+  font-family: "Poppins";
+  font-weight: medium;
+  font-size: 20px;
+  color: #0B53AA;
+
 }
