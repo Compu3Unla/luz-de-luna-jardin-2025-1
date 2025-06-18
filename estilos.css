@@ -12,21 +12,6 @@ header {
   display: flex;
 }
 
-/* abro index.html*/
-/* abro header*/
-
-
-
-/*cierro header*/
-/*abro main*/
-#presentación {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 60px;
-  height: 100vh;
-}
-
 h1 {
   font-family: 'Barrio', cursive;
   font-size: 220px;
@@ -73,14 +58,22 @@ img {
   border-radius: 15px;
 }
 
-/*contacto*/
+
 .lista-sedes {
   list-style: none;
   font-family: 'Poppins', sans-serif;
   color: #391C8A;
 }
 
-/*contacto*/
+/* abro index.html*/
+
+#presentación {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  height: 100vh;
+}
 
 .jardin-section {
   display: flex;
@@ -124,13 +117,11 @@ img {
 }
 
 
-
 .texto {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 
 
 .body-index {
@@ -143,9 +134,7 @@ img {
   flex-direction: column;
   min-height: 100vh;
 }
-
-
-/* cierro main*/
+/* cierro index*/
 
 /* abro footer*/
 /* footer completo, hay que copiar y pegar las class y etiquetas tal cual+ <a><img></a> y <p>*/
