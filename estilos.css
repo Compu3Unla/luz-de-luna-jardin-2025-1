@@ -255,20 +255,27 @@ footer {
 
 /* === ABRO EDUCACION === */
 
-.pagina-niveles {
+body {
   margin: 0;
   padding: 0;
   background-image: url("img/fondo-niveles.png");
-  width: 100%;
-  height: 4040px;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.pagina-niveles {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 .main-niveles {
+  flex: 1;
   position: relative;
   text-align: center;
   padding: 100px 20px 150px;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo img {
@@ -279,10 +286,8 @@ footer {
 
 .contenido h2 {
   font-family: 'Baloo', cursive;
-  font-family: 'Baloo';
   font-size: 96px;
   color: #F9FAE5;
-  margin-bottom: 15px;
 }
 
 .texto-descriptivo {
@@ -298,7 +303,7 @@ footer {
 
 .formacion {
   padding: 40px;
-  padding-top: 100px;
+  padding-top: 200px;
   font-family: 'Baloo', cursive;
   color: #0057A3;
   text-align: left;
