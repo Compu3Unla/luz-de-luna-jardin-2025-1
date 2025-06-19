@@ -484,3 +484,257 @@ footer {
   max-width: 900px;
   height: 480;
 }
+
+/*ACTIVIDADES*/
+
+.fondo-actividades {
+  margin: 0;
+  padding: 0;
+  background-image: url("img/fondo-actividades.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+
+.main-actividades {
+
+  flex: 1;
+  position: relative;
+  text-align: center;
+  padding: 100px 20px 150px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+
+.texto-descriptivo-actividades {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #F9FAE5;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.titulo-actividades h3 {
+ font-family: 'Baloo';
+ font-size: 70px; 
+ font-weight: 500;
+ display: flex;
+ justify-content: start;
+ position: relative; 
+ top: 180px; 
+ margin-left: 50px;
+}
+
+.carrusel {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 40px;
+  scroll-snap-type: x mandatory;
+  position: relative;
+  top: 150px;
+  z-index: 2;
+  border-radius: 20px;
+  
+}
+
+.contenedor-car {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 30px; 
+}
+
+.elemento {
+  flex: 1 0 auto;
+  margin: 0 50px;
+}
+
+.elemento img {
+  width: 200px;
+  height: 200px; 
+}
+
+.elemento h6 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  color: #391C8A;
+  margin: 10px;
+  margin-left: 40px;
+  width: 125px;
+}
+
+.carrusel::-webkit-scrollbar {
+  height: 12px;
+}
+
+.carrusel::-webkit-scrollbar-track {
+  background: #391C8A;
+  border-radius: 10px;
+}
+
+.carrusel::-webkit-scrollbar-thumb {
+  background-color: #F9FAE5;
+  border-radius: 10px;
+  border: 3px solid #391C8A;
+}
+
+.carrusel::-webkit-scrollbar-thumb:hover {
+  background-color: #E3E4CB;
+}
+
+
+
+.secciondos-actividades {
+  display: flex;
+  flex-direction: column;
+}
+
+.comunidad-actividades h3{
+ font-family: 'Baloo';
+ font-size: 70px; 
+ color: #0B53AA;
+ font-weight: 500;
+ display: flex;
+ justify-content: flex-start;
+ align-items: flex-start;
+ position: relative; 
+ top: 300px;
+ margin-left: 50px;
+}
+
+.comunidad-actividades p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #9243A1;
+  text-align: left;
+  width: 580px;
+  position: relative;
+  top: 300px;
+  margin-left: 50px;
+}
+
+.lado-izquierdouno-act {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 100px;
+  top: 140px;   
+}
+
+.lado-izquierdouno-act img {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: 190px;
+  left: 150px;
+  z-index: 20;
+}
+
+.lado-izquierdodos-act {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 100px;
+  bottom: 15px;
+}
+
+.lado-izquierdodos-act img {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: 190px;
+  left: 150px;
+  z-index: 20;
+}
+
+.lado-izquierdotres-act {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 100px;
+  bottom: 170px;
+}
+
+.lado-izquierdotres-act img {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: 190px;
+  left: 150px;
+  z-index: 20;
+}
+
+
+.contornos-izq { 
+  margin: 0px 0px 50px 50px;
+  border-radius: 8%;
+  width: 400px;
+  border: 5px solid #0B53AA;
+  position: relative;  
+  left: 250px;
+  z-index: 1;
+}
+
+.contornos-izq h5 {
+  font-family: 'Baloo 2', cursive;
+  font-weight: bold;
+  font-size: 35px; 
+  color: #391C8A;
+  text-align: left;
+  margin-left: 70px;
+}
+
+.contornos-izq p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  color: #0B53AA;
+  text-align: left;
+  margin: 0px 0px 10px 70px;
+}
+
+
+.lado-derecho-act {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: relative;
+  bottom: 300px;
+}
+
+.contornos-der { 
+  margin: 0px 0px 50px 50px;
+  border-radius: 8%;
+  width: 500px;
+  height: 150px;
+  border: 5px solid #0B53AA;
+  position: relative;  
+  z-index: 1;
+}
+
+.contornos-der h5 {
+  font-family: 'Baloo 2', cursive;
+  font-weight: bold;
+  font-size: 35px; 
+  color: #391C8A;
+  text-align: left;
+  margin-left: 70px;
+}
+
+.contornos-der p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  color: #0B53AA;
+  text-align: left;
+  margin: 0px 30px 10px 30px;
+}
