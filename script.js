@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const footer = document.querySelector('footer');
 
   boton.addEventListener('click', () => {
-    pantalla.style.display = 'none';   // oculta video y pantalla inicial
-    header.style.display = 'flex';     // muestra header
-    main.style.display = 'block';      // muestra main
-    footer.style.display = 'block';    // muestra footer
+    pantalla.style.display = 'none';  
+    header.style.display = 'flex';   
+    main.style.display = 'block';     
+    footer.style.display = 'block';    
   });
 });
