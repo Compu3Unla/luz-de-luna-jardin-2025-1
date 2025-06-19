@@ -50,7 +50,7 @@ h4 {
 h5 {
   font-family: 'Baloo 2', cursive;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: bold;
   color: #391C8A;
 }
 
@@ -469,19 +469,39 @@ footer {
   padding-bottom: 2%;
 }
 
-.contenedor-contactanos-sucursales {
+#contenedor-contactanos-sucursales {
+  /*contenedor cotactanos - sedes*/
   display: flex;
   flex-wrap: wrap;
   gap: 10%;
   justify-content: center;
 }
 
-.contacto-contactanos-derecha {
+.contacto-contactanos-izq {
+  /*contenedor principal contactanos*/
   flex-direction: row;
   max-width: 600px;
 }
 
-.contacto-nuestras-sucursales-izq {
+.botones-tel-mail-izq {
+  padding-top: 7%;
+  padding-left: 3%;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+.tel-gmail {
+  font-family: "Baloo 2";
+  font-size: 24px;
+  font-weight: bold;
+  color: #8A4695;
+}
+
+.contacto-nuestras-sucursales-der {
+  /*contenedor principal sedes*/
+  display: flex;
+  flex-direction: column;
   border: 1px solid #9243A1;
   padding-top: 1%;
   padding-left: 3%;
@@ -489,10 +509,36 @@ footer {
   padding-right: 3%;
   /* Espacio interno*/
   border-radius: 57px;
-  /* Opcional: espacio externo arriba y abajo */
+  max-width: 800px;
+}
+
+.titulo-sucursales {
+  display: flex;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<imagenesss>>>>>>>>>>>*/
+.contacto-sedes {
+  display: flex;
+  flex-direction: column;
+  /* Espacio entre bloques */
+  justify-content: space-between;
+}
+
+.textos-info-sedes1 {
+  max-width: 300px;
+  background-color: lightblue;
+  display: flex;
   flex-direction: row;
-  max-width: 900px;
-  height: 480;
+  gap: 8px;
+}
+
+.textos-info-sedes2 {
+  max-width: 300px;
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  flex: 1;
 }
 
 .texto-sucursales {
@@ -503,10 +549,14 @@ footer {
   padding-top: 2%;
 }
 
+.lista-sedes img {
+  padding-right: 5px;
+}
+
+
 .info-formulario {
   font-family: "Poppins";
   font-weight: medium;
   font-size: 20px;
   color: #0B53AA;
-
 }
