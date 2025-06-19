@@ -488,8 +488,7 @@ footer {
 /*ACTIVIDADES*/
 
 .fondo-actividades {
-  margin: 0;
-  padding: 0;
+  margin-top: 100px;
   background-image: url("img/fondo-actividades.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -608,7 +607,7 @@ footer {
  align-items: flex-start;
  position: relative; 
  top: 300px;
- margin-left: 50px;
+ margin-left: 35px;
 }
 
 .comunidad-actividades p {
@@ -621,14 +620,14 @@ footer {
   width: 580px;
   position: relative;
   top: 300px;
-  margin-left: 50px;
+  margin-left: 35px;
 }
 
 .lado-izquierdouno-act {
   display: flex;
   flex-direction: column;
   position: relative;
-  right: 100px;
+  right: 115px;
   top: 140px;   
 }
 
@@ -645,7 +644,7 @@ footer {
   display: flex;
   flex-direction: column;
   position: relative;
-  right: 100px;
+  right: 115px;
   bottom: 15px;
 }
 
@@ -662,8 +661,8 @@ footer {
   display: flex;
   flex-direction: column;
   position: relative;
-  right: 100px;
-  bottom: 170px;
+  right: 115px;
+  bottom: 140px;
 }
 
 .lado-izquierdotres-act img {
@@ -700,7 +699,7 @@ footer {
   font-size: 17px;
   color: #0B53AA;
   text-align: left;
-  margin: 0px 0px 10px 70px;
+  margin: 0px 10px 10px 60px;
 }
 
 
@@ -709,16 +708,28 @@ footer {
   justify-content: flex-end;
   align-items: flex-start;
   position: relative;
-  bottom: 300px;
+  margin-right: 50px;
+  bottom: 600px;
+  
+}
+
+.lado-derecho-act img {
+  position: relative;
+  left: 569px;
+  bottom: 150px;
+  margin-right: 20px;
+  z-index: 10;
+
 }
 
 .contornos-der { 
   margin: 0px 0px 50px 50px;
   border-radius: 8%;
-  width: 500px;
+  width: 485px;
   height: 150px;
   border: 5px solid #0B53AA;
-  position: relative;  
+  position: relative;
+  bottom: 280px;  
   z-index: 1;
 }
 
@@ -736,5 +747,5 @@ footer {
   font-size: 17px;
   color: #0B53AA;
   text-align: left;
-  margin: 0px 30px 10px 30px;
+  margin: 0px 20px 10px 30px;
 }
