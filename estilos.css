@@ -58,7 +58,6 @@ p {
 img {
   border-radius: 15px;
 }
-/*video*/
 #pantalla-inicial {
   position: fixed;
   top: 0;
@@ -80,16 +79,16 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-
+  
+  /* Para centrar en columna con espacio entre título y botón */
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  justify-content: space-between;
-
-  padding: 40px 0;
+  justify-content: center;
+  gap: 40px;
 }
 
+/* Recuadro y estilo del título "Luz de Luna" */
 .titulo-video {
   background-color: #F9FAE5;
   width: 1920px;
@@ -100,9 +99,10 @@ img {
   font-family: 'Barrio', cursive;
   font-size: 96px;
   color: #0B53AA;
-  margin: 0;
+  margin: 0; /* por si acaso */
 }
 
+/* Recuadro y estilo del botón "Inicio" */
 .boton-inicio {
   width: 288px;
   height: 79px;
@@ -110,16 +110,13 @@ img {
   color: #0B53AA;
   font-family: 'Baloo', cursive;
   font-size: 36px;
-
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   user-select: none;
   border: none;
-
-  border-radius: 20px;
-
+  /* Opcional, para que cambie el fondo al pasar el mouse */
   transition: background-color 0.3s;
 }
 
