@@ -80,10 +80,13 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
   justify-content: space-between;
+
   padding: 40px 0;
 }
 
@@ -114,12 +117,16 @@ img {
   cursor: pointer;
   user-select: none;
   border: none;
+
   border-radius: 20px;
+
+  transition: background-color 0.3s;
 }
 
 .boton-inicio:hover {
   background-color: #ecebcf;
 }
+
 /*abro main*/
 #presentación {
   display: flex;
