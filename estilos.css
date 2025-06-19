@@ -58,8 +58,68 @@ p {
 img {
   border-radius: 15px;
 }
+/*video*/
+#pantalla-inicial {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+}
 
+#pantalla-inicial video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.contenido-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.titulo-video {
+  background-color: #F9FAE5;
+  width: 1920px;
+  height: 176px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Barrio', cursive;
+  font-size: 96px;
+  color: #0B53AA;
+  margin: 0;
+}
+
+.boton-inicio {
+  width: 288px;
+  height: 79px;
+  background-color: #F9FAE5;
+  color: #0B53AA;
+  font-family: 'Baloo', cursive;
+  font-size: 36px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  border-radius: 20px;
+}
+
+.boton-inicio:hover {
+  background-color: #ecebcf;
+}
 /*abro main*/
 #presentación {
   display: flex;
