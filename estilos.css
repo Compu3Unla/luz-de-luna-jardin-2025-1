@@ -12,20 +12,6 @@ header {
   display: flex;
 }
 
-/* abro index.html*/
-/* abro header*/
-
-
-
-/*cierro header*/
-/*abro main*/
-#presentación {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 60px;
-  height: 100vh;
-}
 
 h1 {
   font-family: 'Barrio', cursive;
@@ -73,14 +59,16 @@ img {
   border-radius: 15px;
 }
 
-/*contacto*/
-.lista-sedes {
-  list-style: none;
-  font-family: 'Poppins', sans-serif;
-  color: #391C8A;
+
+/*abro main*/
+#presentación {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  height: 100vh;
 }
 
-/*contacto*/
 
 .jardin-section {
   display: flex;
@@ -104,7 +92,6 @@ img {
   gap: 20px;
   border: 3px solid #8A4695;
   border-radius: 20px;
-  margin-bottom: 20px;
 }
 
 .docentes {
@@ -119,10 +106,8 @@ img {
 .intro-docentes {
   grid-column: 1 / -1;
   max-width: 700px;
-  margin: 0 0 40px 0;
   text-align: left;
 }
-
 
 
 .texto {
@@ -130,7 +115,6 @@ img {
   flex-direction: column;
   justify-content: center;
 }
-
 
 
 .body-index {
@@ -143,7 +127,6 @@ img {
   flex-direction: column;
   min-height: 100vh;
 }
-
 
 /* cierro main*/
 
@@ -261,10 +244,6 @@ footer {
 }
 
 .formacion h3 {
-  font-family: 'Baloo', cursive;
-  font-size: 70px;
-  color: #0B53AA;
-  font-weight: 500;
   margin-bottom: 30px;
   margin-left: 200px;
 }
@@ -281,6 +260,7 @@ footer {
   margin: 0 auto;
   margin-bottom: 80px;
   background-color: #F9FAE5;
+
 }
 
 .imagen-principal {
@@ -297,17 +277,12 @@ footer {
 }
 
 .info h5 {
-  font-family: 'Baloo 2', cursive;
-  font-size: 40px;
-  font-weight: 700;
-  color: #391C8A;
   margin: 0 0 10px;
   text-align: left;
 }
 
 .info p {
   font-size: 20px;
-  font-family: 'Poppins', sans-serif;
   color: #0B53AA;
   margin-bottom: 15px;
   margin-right: 280px;
@@ -391,14 +366,13 @@ footer {
   box-shadow: 6px 10px rgba(0, 0, 0, 0.1);
 }
 
-.tarjeta-taller h3 {
+.tarjeta-taller h5 {
   font-size: 24px;
   color: #F9FAE5;
   background-color: #0B53AA;
   display: inline-block;
   padding: 8px 14px;
   border-radius: 10px;
-  font-family: 'Baloo 2', cursive;
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -406,7 +380,6 @@ footer {
 .tarjeta-taller p {
   font-size: 20px;
   color: #391C8A;
-  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   max-width: 90%;
   margin: 0 auto;
@@ -472,15 +445,13 @@ footer {
 #contenedor-contactanos-sucursales {
   /*contenedor cotactanos - sedes*/
   display: flex;
-  flex-wrap: wrap;
-  gap: 10%;
-  justify-content: center;
+  row-gap: 10%;
+
 }
 
 .contacto-contactanos-izq {
   /*contenedor principal contactanos*/
   flex-direction: row;
-  max-width: 600px;
 }
 
 .botones-tel-mail-izq {
