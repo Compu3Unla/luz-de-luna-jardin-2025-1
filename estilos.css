@@ -112,7 +112,6 @@ img {
 .intro-docentes {
   grid-column: 1 / -1;
   max-width: 700px;
-  margin: 0 0 40px 0;
   text-align: left;
 }
 
