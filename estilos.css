@@ -5,12 +5,19 @@
   padding: 0;
 }
 
+.body-index header,
+.body-index main,
+.body-index footer {
+  display: none;
+}
+
 header {
   width: 100%;
   height: 74px;
   background-color: #0B53AA;
   display: flex;
 }
+
 
 h1 {
   font-family: 'Barrio', cursive;
@@ -35,7 +42,15 @@ h4 {
 h5 {
   font-family: 'Baloo 2', cursive;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: bold;
+  color: #391C8A;
+}
+
+.h6 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
   color: #391C8A;
 }
 
@@ -45,28 +60,80 @@ p {
   line-height: 30px;
   color: #0B53AA;
 }
-.h6 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  color: #391C8A;
-}
-
 
 img {
   border-radius: 15px;
 }
 
-
-.lista-sedes {
-  list-style: none;
-  font-family: 'Poppins', sans-serif;
-  color: #391C8A;
+/* Video pantalla inicial */
+#pantalla-inicial {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background: black;
 }
 
-/* abro index.html*/
+#pantalla-inicial video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.contenido-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.titulo-video {
+  background-color: #F9FAE5;
+  width: 1920px;
+  max-width: 90vw;
+  height: 176px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Barrio', cursive;
+  font-size: 96px;
+  color: #0B53AA;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.boton-inicio {
+  width: 288px;
+  height: 79px;
+  background-color: #F9FAE5;
+  color: #0B53AA;
+  font-family: 'Baloo', cursive;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  margin-top: 60px;
+}
+
+.boton-inicio:hover {
+  background-color: #ecebcf;
+}
+
+/*abro main*/
 #presentación {
   display: flex;
   flex-direction: column;
@@ -74,6 +141,7 @@ img {
   padding-top: 60px;
   height: 100vh;
 }
+
 
 .jardin-section {
   display: flex;
@@ -111,7 +179,6 @@ img {
 .intro-docentes {
   grid-column: 1 / -1;
   max-width: 700px;
-  margin: 0 0 40px 0;
   text-align: left;
 }
 
@@ -133,7 +200,8 @@ img {
   flex-direction: column;
   min-height: 100vh;
 }
-/* cierro index*/
+
+/* cierro main*/
 
 /* abro footer*/
 /* footer completo, hay que copiar y pegar las class y etiquetas tal cual+ <a><img></a> y <p>*/
@@ -249,10 +317,6 @@ footer {
 }
 
 .formacion h3 {
-  font-family: 'Baloo', cursive;
-  font-size: 70px;
-  color: #0B53AA;
-  font-weight: 500;
   margin-bottom: 30px;
   margin-left: 200px;
 }
@@ -269,6 +333,7 @@ footer {
   margin: 0 auto;
   margin-bottom: 80px;
   background-color: #F9FAE5;
+
 }
 
 .imagen-principal {
@@ -285,17 +350,12 @@ footer {
 }
 
 .info h5 {
-  font-family: 'Baloo 2', cursive;
-  font-size: 40px;
-  font-weight: 700;
-  color: #391C8A;
   margin: 0 0 10px;
   text-align: left;
 }
 
 .info p {
   font-size: 20px;
-  font-family: 'Poppins', sans-serif;
   color: #0B53AA;
   margin-bottom: 15px;
   margin-right: 280px;
@@ -381,14 +441,13 @@ footer {
   box-shadow: 6px 10px rgba(0, 0, 0, 0.1);
 }
 
-.tarjeta-taller h3 {
+.tarjeta-taller h5 {
   font-size: 24px;
   color: #F9FAE5;
   background-color: #0B53AA;
   display: inline-block;
   padding: 8px 14px;
   border-radius: 10px;
-  font-family: 'Baloo 2', cursive;
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -396,7 +455,6 @@ footer {
 .tarjeta-taller p {
   font-size: 20px;
   color: #391C8A;
-  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   max-width: 90%;
   margin: 0 auto;
@@ -447,6 +505,21 @@ footer {
 
 /* HTML CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
+.lista-sedes {
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #391C8A;
+  padding-top: 10px;
+  padding-left: 5%;
+  padding-bottom: 5%;
+}
+
+.lista-sedes img {
+  padding-right: 5px;
+}
+
+
 .main-contacto {
   background-color: #F9FAE5;
   padding: 5%;
@@ -459,19 +532,40 @@ footer {
   padding-bottom: 2%;
 }
 
-.contenedor-contactanos-sucursales {
+#contenedor-contactanos-sucursales {
+  /*contenedor cotactanos - sedes*/
   display: flex;
-  flex-wrap: wrap;
   gap: 10%;
   justify-content: center;
 }
 
-.contacto-contactanos-derecha {
+.contacto-contactanos-izq {
+  /*contenedor principal contactanos*/
   flex-direction: row;
   max-width: 600px;
 }
 
-.contacto-nuestras-sucursales-izq {
+.botones-tel-mail-izq {
+  padding-top: 7%;
+  padding-left: 3%;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+.tel-gmail {
+  font-family: "Baloo 2";
+  font-size: 24px;
+  font-weight: bold;
+  color: #8A4695;
+}
+
+/*contenedor principal sedes>>>>>>>>>>>>>>>*/
+.contacto-nuestras-sucursales-der {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 770px;
   border: 1px solid #9243A1;
   padding-top: 1%;
   padding-left: 3%;
@@ -479,10 +573,73 @@ footer {
   padding-right: 3%;
   /* Espacio interno*/
   border-radius: 57px;
-  /* Opcional: espacio externo arriba y abajo */
+  position: relative;
+  z-index: 1;
+  background-color: solid #E4E9F5;
+}
+
+.contacto-nuestras-sucursales-der::before {
+  content: "Nuestras Sucursales";
+  position: absolute;
+  /*config. text. encima*/
+  color: #391C8A;
+  font-family: "Baloo 2";
+  font-size: 40px;
+  font-weight: bold;
+  z-index: 2;
+  text-align: center;
+
+  width: 100%;
+  height: 80px;
+  /* Ajustá este valor al grosor decorativo */
+  background-color: #E4E9F5;
+  /* Color decorativo */
+  border-top-left-radius: 57px;
+  border-top-right-radius: 57px;
+  z-index: 0;
+}
+
+
+
+.titulo-sucursales {
+  display: flex;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<imagenesss>>>>>>>>>>>*/
+.contacto-sedes {
+  display: flex;
+  gap: 7%;
+  align-items: center;
+}
+
+.contacto-sedes img {
+  max-width: 320;
+  max-height: 245px;
+  flex: 1;
+  margin-top: 3%;
+  border-radius: 15px;
+}
+
+
+
+.textos-info-sedes1 {
+  display: flex;
   flex-direction: row;
-  max-width: 900px;
-  height: 480;
+  max-width: 57%;
+  padding-top: 2%;
+  gap: 8px;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.textos-info-sedes2 {
+  display: flex;
+  flex-direction: row;
+  max-width: 43%;
+  padding-top: 2%;
+  gap: 8px;
+  align-items: flex-start;
+  flex: 1;
 }
 
 /*ACTIVIDADES*/
@@ -698,54 +855,5 @@ footer {
   font-family: 'Poppins', sans-serif;
   font-size: 17px;
   color: #0B53AA;
-  text-align: left;
-  margin: 0px 10px 10px 60px;
-}
 
-
-.lado-derecho-act {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  position: relative;
-  margin-right: 50px;
-  bottom: 600px;
-  
-}
-
-.lado-derecho-act img {
-  position: relative;
-  left: 569px;
-  bottom: 150px;
-  margin-right: 20px;
-  z-index: 10;
-
-}
-
-.contornos-der { 
-  margin: 0px 0px 50px 50px;
-  border-radius: 8%;
-  width: 485px;
-  height: 150px;
-  border: 5px solid #0B53AA;
-  position: relative;
-  bottom: 280px;  
-  z-index: 1;
-}
-
-.contornos-der h5 {
-  font-family: 'Baloo 2', cursive;
-  font-weight: bold;
-  font-size: 35px; 
-  color: #391C8A;
-  text-align: left;
-  margin-left: 70px;
-}
-
-.contornos-der p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 17px;
-  color: #0B53AA;
-  text-align: left;
-  margin: 0px 20px 10px 30px;
 }
