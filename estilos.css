@@ -644,6 +644,7 @@ footer {
 
 /*ACTIVIDADES*/
 
+
 .fondo-actividades {
   margin-top: 100px;
   background-image: url("img/fondo-actividades.png");
@@ -855,5 +856,54 @@ footer {
   font-family: 'Poppins', sans-serif;
   font-size: 17px;
   color: #0B53AA;
+  text-align: left;
+  margin: 0px 10px 10px 60px;
+}
 
+
+.lado-derecho-act {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: relative;
+  margin-right: 50px;
+  bottom: 600px;
+  
+}
+
+.lado-derecho-act img {
+  position: relative;
+  left: 569px;
+  bottom: 150px;
+  margin-right: 20px;
+  z-index: 10;
+
+}
+
+.contornos-der { 
+  margin: 0px 0px 50px 50px;
+  border-radius: 8%;
+  width: 485px;
+  height: 150px;
+  border: 5px solid #0B53AA;
+  position: relative;
+  bottom: 280px;  
+  z-index: 1;
+}
+
+.contornos-der h5 {
+  font-family: 'Baloo 2', cursive;
+  font-weight: bold;
+  font-size: 35px; 
+  color: #391C8A;
+  text-align: left;
+  margin-left: 70px;
+}
+
+.contornos-der p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  color: #0B53AA;
+  text-align: left;
+  margin: 0px 20px 10px 30px;
 }
