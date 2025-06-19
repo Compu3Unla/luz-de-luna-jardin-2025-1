@@ -12,14 +12,6 @@ header {
   display: flex;
 }
 
-/* abro index.html*/
-/* abro header*/
-
-
-
-/*cierro header*/
-/*abro main*/
-
 
 h1 {
   font-family: 'Barrio', cursive;
@@ -67,6 +59,8 @@ img {
   border-radius: 15px;
 }
 
+
+/*abro main*/
 #presentación {
   display: flex;
   flex-direction: column;
