@@ -19,13 +19,7 @@ header {
 
 /*cierro header*/
 /*abro main*/
-#presentación {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 60px;
-  height: 100vh;
-}
+
 
 h1 {
   font-family: 'Barrio', cursive;
@@ -54,7 +48,7 @@ h5 {
   color: #391C8A;
 }
 
-h6 {
+.h6 {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -72,6 +66,15 @@ p {
 img {
   border-radius: 15px;
 }
+
+#presentación {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  height: 100vh;
+}
+
 
 .jardin-section {
   display: flex;
@@ -95,7 +98,6 @@ img {
   gap: 20px;
   border: 3px solid #8A4695;
   border-radius: 20px;
-  margin-bottom: 20px;
 }
 
 .docentes {
@@ -110,10 +112,9 @@ img {
 .intro-docentes {
   grid-column: 1 / -1;
   max-width: 700px;
-  margin: 0 0 40px 0; 
-  text-align: left; 
+  margin: 0 0 40px 0;
+  text-align: left;
 }
-
 
 
 .texto {
@@ -122,23 +123,17 @@ img {
   justify-content: center;
 }
 
-.fondo-fijo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: auto;
-  height: auto;
-}
-
 
 .body-index {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  position: relative;
+  background-image: url("img/fondo-index.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-
 /* cierro main*/
 
 /* abro footer*/
