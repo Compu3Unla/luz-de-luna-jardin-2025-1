@@ -58,55 +58,51 @@ p {
 img {
   border-radius: 15px;
 }
+
+/* Video pantalla inicial */
 #pantalla-inicial {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 9999;
-  overflow: hidden;
+  background: black;
 }
 
-/* El video ocupa toda la pantalla */
 #pantalla-inicial video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Contenedor para centrar los textos sobre el video */
 .contenido-video {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   width: 100%;
   height: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* centrado vertical */
-  gap: 120px; /* separa título del botón */
-  padding: 40px 0;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
 }
 
-/* Estilo del recuadro con el título */
 .titulo-video {
   background-color: #F9FAE5;
   width: 1920px;
+  max-width: 90vw;
   height: 176px;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   font-family: 'Barrio', cursive;
   font-size: 96px;
   color: #0B53AA;
+  margin: 0 auto;
+  border-radius: 8px;
 }
 
-/* Botón de inicio */
 .boton-inicio {
   width: 288px;
   height: 79px;
@@ -114,16 +110,15 @@ img {
   color: #0B53AA;
   font-family: 'Baloo', cursive;
   font-size: 36px;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
-  border: none;
-  border-radius: 30px;
-  text-decoration: none;
   cursor: pointer;
+  user-select: none;
+  border: none;
+  border-radius: 20px;
   transition: background-color 0.3s;
+  margin-top: 60px;
 }
 
 .boton-inicio:hover {
