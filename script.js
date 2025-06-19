@@ -4,5 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('header');
   const main = document.querySelector('main');
   const footer = document.querySelector('footer');
-
+  
+  boton.addEventListener('click', () => {
+    pantalla.style.display = 'none';  // ocultar video
+  });
 });
