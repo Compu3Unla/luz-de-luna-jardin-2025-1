@@ -29,14 +29,14 @@ h3 {
 h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 60px;  
+  font-size: 60px;
   color: #F9FAE5;
 }
 
 h5 {
   font-family: 'Baloo 2', cursive;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: bold;
   color: #391C8A;
 }
 
@@ -187,6 +187,7 @@ img {
   flex-direction: column;
   min-height: 100vh;
 }
+
 /* cierro main*/
 
 /* abro footer*/
@@ -319,7 +320,7 @@ footer {
   margin: 0 auto;
   margin-bottom: 80px;
   background-color: #F9FAE5;
-  
+
 }
 
 .imagen-principal {
@@ -399,8 +400,8 @@ footer {
 .talleres p strong {
   font-weight: 700;
   display: block;
-  margin-bottom: 2px; 
-  line-height: 1.2; 
+  margin-bottom: 2px;
+  line-height: 1.2;
 }
 
 .tarjeta-taller {
@@ -424,6 +425,7 @@ footer {
   margin-bottom: 20px;
   box-shadow: 6px 10px rgba(0, 0, 0, 0.1);
 }
+
 .tarjeta-taller h5 {
   font-size: 24px;
   color: #F9FAE5;
@@ -442,6 +444,7 @@ footer {
   max-width: 90%;
   margin: 0 auto;
 }
+
 .carrusel-wrapper {
   overflow-x: auto;
   overflow-y: hidden;
@@ -479,6 +482,7 @@ footer {
 .carrusel-wrapper::-webkit-scrollbar-thumb:hover {
   background-color: #E3E4CB;
 }
+
 /* === CIERRO EDUCACION === */
 
 
@@ -498,20 +502,92 @@ footer {
   padding-bottom: 2%;
 }
 
-.contenedor-contactanos-sucursales {
+#contenedor-contactanos-sucursales {
+  /*contenedor cotactanos - sedes*/
   display: flex;
   row-gap: 10%;
 
 }
 
-.contacto-contactanos-derecha {
+.contacto-contactanos-izq {
+  /*contenedor principal contactanos*/
   flex-direction: row;
 }
 
-.contacto-nuestras-sucursales-izq {
-  flex-direction: row;
-  border-color: #9243A1;
+.botones-tel-mail-izq {
+  padding-top: 7%;
+  padding-left: 3%;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+.tel-gmail {
+  font-family: "Baloo 2";
+  font-size: 24px;
+  font-weight: bold;
+  color: #8A4695;
+}
+
+.contacto-nuestras-sucursales-der {
+  /*contenedor principal sedes*/
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #9243A1;
+  padding-top: 1%;
+  padding-left: 3%;
+  padding-bottom: 0%;
+  padding-right: 3%;
+  /* Espacio interno*/
   border-radius: 57px;
-  width: 879;
-  height: 480;
+  max-width: 800px;
+}
+
+.titulo-sucursales {
+  display: flex;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<imagenesss>>>>>>>>>>>*/
+.contacto-sedes {
+  display: flex;
+  flex-direction: column;
+  /* Espacio entre bloques */
+  justify-content: space-between;
+}
+
+.textos-info-sedes1 {
+  max-width: 300px;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.textos-info-sedes2 {
+  max-width: 300px;
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  flex: 1;
+}
+
+.texto-sucursales {
+  font-family: "Baloo 2";
+  font-size: 24px;
+  color: #391C8A;
+  font-weight: bold;
+  padding-top: 2%;
+}
+
+.lista-sedes img {
+  padding-right: 5px;
+}
+
+
+.info-formulario {
+  font-family: "Poppins";
+  font-weight: medium;
+  font-size: 20px;
+  color: #0B53AA;
 }
