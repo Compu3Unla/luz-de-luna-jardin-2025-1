@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
 }
+
 .body-index header,
 .body-index main,
 .body-index footer {
@@ -67,7 +68,8 @@ img {
 /* Video pantalla inicial */
 #pantalla-inicial {
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 9999;
@@ -82,7 +84,8 @@ img {
 
 .contenido-video {
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -500,6 +503,21 @@ footer {
 
 /* HTML CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
+.lista-sedes {
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #391C8A;
+  padding-top: 10px;
+  padding-left: 5%;
+  padding-bottom: 5%;
+}
+
+.lista-sedes img {
+  padding-right: 5px;
+}
+
+
 .main-contacto {
   background-color: #F9FAE5;
   padding: 5%;
@@ -515,13 +533,14 @@ footer {
 #contenedor-contactanos-sucursales {
   /*contenedor cotactanos - sedes*/
   display: flex;
-  row-gap: 10%;
-
+  gap: 10%;
+  justify-content: center;
 }
 
 .contacto-contactanos-izq {
   /*contenedor principal contactanos*/
   flex-direction: row;
+  max-width: 600px;
 }
 
 .botones-tel-mail-izq {
@@ -539,10 +558,12 @@ footer {
   color: #8A4695;
 }
 
+/*contenedor principal sedes>>>>>>>>>>>>>>>*/
 .contacto-nuestras-sucursales-der {
-  /*contenedor principal sedes*/
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 770px;
   border: 1px solid #9243A1;
   padding-top: 1%;
   padding-left: 3%;
@@ -550,8 +571,33 @@ footer {
   padding-right: 3%;
   /* Espacio interno*/
   border-radius: 57px;
-  max-width: 800px;
+  position: relative;
+  z-index: 1;
+  background-color: solid #E4E9F5;
 }
+
+.contacto-nuestras-sucursales-der::before {
+  content: "Nuestras Sucursales";
+  position: absolute;
+  /*config. text. encima*/
+  color: #391C8A;
+  font-family: "Baloo 2";
+  font-size: 40px;
+  font-weight: bold;
+  z-index: 2;
+  text-align: center;
+
+  width: 100%;
+  height: 80px;
+  /* Ajustá este valor al grosor decorativo */
+  background-color: #E4E9F5;
+  /* Color decorativo */
+  border-top-left-radius: 57px;
+  border-top-right-radius: 57px;
+  z-index: 0;
+}
+
+
 
 .titulo-sucursales {
   display: flex;
@@ -560,25 +606,37 @@ footer {
 /*<<<<<<<<<<<<<<<<<<<<imagenesss>>>>>>>>>>>*/
 .contacto-sedes {
   display: flex;
-  flex-direction: column;
-  /* Espacio entre bloques */
-  justify-content: space-between;
+  gap: 7%;
+  align-items: center;
 }
 
+.contacto-sedes img {
+  max-width: 320;
+  max-height: 245px;
+  flex: 1;
+  margin-top: 3%;
+  border-radius: 15px;
+}
+
+
+
 .textos-info-sedes1 {
-  max-width: 300px;
-  background-color: lightblue;
   display: flex;
   flex-direction: row;
+  max-width: 57%;
+  padding-top: 2%;
   gap: 8px;
+  align-items: flex-start;
+  flex: 1;
 }
 
 .textos-info-sedes2 {
-  max-width: 300px;
-  background-color: lightgreen;
   display: flex;
   flex-direction: row;
+  max-width: 43%;
+  padding-top: 2%;
   gap: 8px;
+  align-items: flex-start;
   flex: 1;
 }
 
@@ -589,11 +647,6 @@ footer {
   font-weight: bold;
   padding-top: 2%;
 }
-
-.lista-sedes img {
-  padding-right: 5px;
-}
-
 
 .info-formulario {
   font-family: "Poppins";
