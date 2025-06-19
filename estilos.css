@@ -59,6 +59,13 @@ img {
   border-radius: 15px;
 }
 
+/*contacto*/
+.lista-sedes {
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  color: #391C8A;
+}
+
 
 /*abro main*/
 #presentación {
