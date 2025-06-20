@@ -237,12 +237,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Baloo 2', cursive;
+  font-family: 'Baloo 2';
   font-weight: 600;
   font-size: 24px;
   text-decoration: none;
-  font-family: 'Baloo';
-  font-weight: lighter;
   color: #F9FAE5;
   background-color: transparent;
   transition: background-color 0.3s, color 0.3s;
@@ -1230,7 +1228,7 @@ strong {
   /*contacto*/
   .nav-button {
     font-family: 'Baloo 2', cursive;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 14px;
     text-decoration: none;
     color: #F9FAE5;
