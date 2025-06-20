@@ -1316,8 +1316,13 @@ strong {
   /*cierre contacto*/
 
 
-}    /*media index*/
-@media screen and (max-width: 600px) {
+}   @media screen and (max-width: 600px) {
+
+  #presentación {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
 
   #presentación img {
     width: 150px;
@@ -1335,7 +1340,7 @@ strong {
     text-align: center;
   }
 
- 
+  /* resto de estilos */
   .jardin-section {
     flex-direction: column;
     padding: 20px;
