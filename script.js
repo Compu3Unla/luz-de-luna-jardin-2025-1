@@ -4,49 +4,38 @@ document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('header');
   const main = document.querySelector('main');
   const footer = document.querySelector('footer');
+  const loaderContainer = document.getElementById('loader');
+  const successContainer = document.getElementById('listo');
 
+  // Animación de carga
+  setTimeout(() => {
+    if (loaderContainer) {
+      loaderContainer.style.display = 'none';
+    }
+    if (successContainer) {
+      successContainer.style.display = 'flex';
+      successContainer.classList.add('visible');
+    }
+  }, 4000);
 
+  // Verificación de sessionStorage
   const videoVisto = sessionStorage.getItem('videoVisto');
 
   if (videoVisto === 'true') {
-
-    pantalla.style.display = 'none';
-    header.classList.remove('oculto');
-    main.classList.remove('oculto');
-    footer.classList.remove('oculto');
+    if (pantalla) pantalla.style.display = 'none';
+    if (header) header.classList.remove('oculto');
+    if (main) main.classList.remove('oculto');
+    if (footer) footer.classList.remove('oculto');
   } else {
+    if (boton) {
+      boton.addEventListener('click', () => {
+        if (pantalla) pantalla.style.display = 'none';
+        if (header) header.classList.remove('oculto');
+        if (main) main.classList.remove('oculto');
+        if (footer) footer.classList.remove('oculto');
 
-    boton.addEventListener('click', () => {
-      pantalla.style.display = 'none';
-      header.classList.remove('oculto');
-      main.classList.remove('oculto');
-      footer.classList.remove('oculto');
-
-      sessionStorage.setItem('videoVisto', 'true');
-    });
-  }
-});
-document.addEventListener('DOMContentLoaded', (event) => {
-    const loaderContainer = document.getElementById('loader'); 
-    const successContainer = document.getElementById('listo'); 
-
-
-    setTimeout(() => {
- 
-        if (loaderContainer) {
-            loaderContainer.style.display = 'none'; 
-        }
-        if (successContainer) {
-            successContainer.style.display = 'flex'; 
-            successContainer.classList.add('visible'); 
-        }
-    }, 4000); 
- if (boton) {
-        boton.addEventListener('click', () => {
-            if (pantalla) pantalla.style.display = 'none';
-            if (header) header.style.display = 'flex';
-            if (main) main.style.display = 'block';
-            if (footer) footer.style.display = 'block';
-        });
+        sessionStorage.setItem('videoVisto', 'true');
+      });
     }
+  }
 });
