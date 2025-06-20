@@ -64,7 +64,7 @@ img {
   border-radius: 15px;
 }
 
-/* Video pantalla inicial */
+
 #pantalla-inicial {
   position: fixed;
   top: 0;
@@ -132,7 +132,7 @@ img {
   background-color: #ecebcf;
 }
 
-/*abro main*/
+
 #presentación {
   display: flex;
   flex-direction: column;
@@ -200,10 +200,7 @@ img {
   min-height: 100vh;
 }
 
-/* cierro main*/
 
-/* abro footer*/
-/* footer completo, hay que copiar y pegar las class y etiquetas tal cual+ <a><img></a> y <p>*/
 footer {
   width: 100%;
   margin: 0;
@@ -223,12 +220,9 @@ footer {
 }
 
 .footer-links p {
-  /* color del copy*/
   color: white;
 }
 
-
-/* cierro footer*/
 /*cierro index.html*/
 
 .nav-button {
@@ -248,13 +242,11 @@ footer {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Hover: fondo claro, texto violeta */
 .nav-button:hover {
   background-color: #F9FAE5;
   color: #9243A1;
 }
 
-/* Botón activo (que indica en que seccion estas) */
 .nav-button.active {
   background-color: #9243A1;
   color: #F9FAE5;
@@ -305,7 +297,6 @@ footer {
   line-height: 1.6;
 }
 
-/* Formación Académica */
 
 .formacion {
   padding: 40px;
@@ -377,8 +368,6 @@ footer {
   border-radius: 10px;
   box-shadow: 6px 10px rgba(0, 0, 0, 0.1);
 }
-
-/* Carrusel Talleres */
 
 .talleres {
   color: #F9FAE5;
@@ -532,7 +521,6 @@ footer {
 }
 
 .contenedor-contactanos-sucursales {
-  /*contenedor cotactanos - sedes*/
   display: flex;
   flex-wrap: wrap;
   gap: 10%;
@@ -559,7 +547,6 @@ footer {
 
 
 .contacto-contactanos-izq {
-  /*contenedor principal contactanos*/
   flex-direction: row;
   max-width: 600px;
   width: 100%;
@@ -605,7 +592,6 @@ footer {
   font-weight: bold;
 }
 
-/*decoración*/
 
 .contacto-nuestras-sucursales-der::before {
   content: "";
@@ -1227,7 +1213,6 @@ strong {
 
 @media screen and (max-width: 600px) {
 
-  /*contacto*/
   .nav-button {
     font-family: 'Baloo 2', cursive;
     font-weight: 600;
@@ -1245,7 +1230,6 @@ strong {
   .contacto-sedes img {
     max-width: 235px;
     max-height: 300px;
-    /* o lo que necesites */
     height: auto;
     object-fit: cover;
   }
