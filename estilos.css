@@ -1021,17 +1021,6 @@ footer {
   display: none;
 }
 
-
-@keyframes cargar {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .contenedor-listo {
   display: none;
   flex-direction: column;
