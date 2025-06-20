@@ -672,77 +672,122 @@ footer {
 
 
 
-
-
-/* === CIRCULO DE CARGA === */
-body, html {
+body {
+  background-image: url("../img/fondoload.png"); /* Esta ruta asume que estilos.css está en 'css/'. Si no, ajusta a "img/fondoload.png" */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fefde8;
   margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: sans-serif;
-  background-color: #fefee7; /* fondo claro */
-}
-
-.fondo {
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
   position: relative;
+  overflow: hidden;
+  color: #094c9b;
 }
 
-/* Animación de carga */
 .contenedor-loader {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+}
+
+.contenedor-loader p {
+  font-weight: 700;
+  font-size: 2.5em;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #094c9b;
+}
+
+/* Animación de giro para la imagen .cargando (circulo.png) */
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .cargando {
-  width: 80px;
-  height: 80px;
-  animation: girar 1s linear infinite;
+  animation: girar 2s linear infinite; /* ¡Esto hará que tu imagen circulo.png gire! */
+  width: 150px;
+  height: 150px;
 }
 
-@keyframes girar {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.loader-circle {
+  display: none; /* ¡¡¡Esta línea OCULTA el div de progreso que no quieres ver!!! */
 }
 
-/* Estado “¡Listo!” */
+/* @keyframes cargar ya no es funcional si .loader-circle está oculto */
+@keyframes cargar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .contenedor-listo {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.contenedor-listo.visible {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .texto-listo {
-  font-size: 2em;
-  font-weight: bold;
-  color: #195bbf;
-  margin-bottom: 20px;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #094c9b;
 }
 
-.circulo-azul {
-  background-color: #195bbf;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 20px;
-}
-
-.circulo-azul img {
-  width: 40px;
-  height: 40px;
+.check-final {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 40px;
 }
 
 .boton-volver {
-  background-color: #e7e8fc;
-  padding: 10px 20px;
-  border-radius: 15px;
-  color: #195bbf;
-  font-weight: bold;
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #094c9b;
+  color: white;
   text-decoration: none;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
 }
 
+.boton-volver:hover {
+  background-color: #063a75;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
