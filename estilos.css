@@ -64,7 +64,7 @@ img {
   border-radius: 15px;
 }
 
-/* Video pantalla inicial */
+/* index.html*/
 #pantalla-inicial {
   position: fixed;
   top: 0;
@@ -203,7 +203,6 @@ img {
 /* cierro main*/
 
 /* abro footer*/
-/* footer completo, hay que copiar y pegar las class y etiquetas tal cual+ <a><img></a> y <p>*/
 footer {
   width: 100%;
   margin: 0;
@@ -223,12 +222,11 @@ footer {
 }
 
 .footer-links p {
-  /* color del copy*/
   color: white;
 }
 
-
 /* cierro footer*/
+
 /*cierro index.html*/
 
 .nav-button {
@@ -248,13 +246,11 @@ footer {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Hover: fondo claro, texto violeta */
 .nav-button:hover {
   background-color: #F9FAE5;
   color: #9243A1;
 }
 
-/* Botón activo (que indica en que seccion estas) */
 .nav-button.active {
   background-color: #9243A1;
   color: #F9FAE5;
@@ -304,8 +300,6 @@ footer {
   margin: 0 auto;
   line-height: 1.6;
 }
-
-/* Formación Académica */
 
 .formacion {
   padding: 40px;
@@ -532,7 +526,6 @@ footer {
 }
 
 .contenedor-contactanos-sucursales {
-  /*contenedor cotactanos - sedes*/
   display: flex;
   flex-wrap: wrap;
   gap: 10%;
@@ -559,7 +552,6 @@ footer {
 
 
 .contacto-contactanos-izq {
-  /*contenedor principal contactanos*/
   flex-direction: row;
   max-width: 600px;
   width: 100%;
@@ -614,9 +606,7 @@ footer {
   top: 0;
   width: 100%;
   height: 80px;
-  /* Ajustá este valor al grosor decorativo */
   background-color: #E4E9F5;
-  /* Color decorativo */
   border-top-left-radius: 57px;
   border-top-right-radius: 57px;
   border-bottom-left-radius: 5px;
@@ -1322,7 +1312,7 @@ strong {
     height: auto;
     padding-top: 30px;
     padding-bottom: 20px;
-    margin-bottom: 30px; /* separación extra abajo */
+    margin-bottom: 30px; 
   }
 
   #presentación img {
@@ -1341,14 +1331,13 @@ strong {
     text-align: center;
   }
 
-  /* Estilos para .jardin-section */
   .jardin-section {
     flex-direction: column;
     padding: 20px;
     max-width: 90%;
     margin: 0 auto 40px auto;
     background-color: #F9FAE5;
-    border-color: transparent; /* oculta el borde en móvil */
+    border-color: transparent; 
   }
 
   .texto-jardin {
@@ -1361,7 +1350,6 @@ strong {
     border-radius: 15px;
   }
 
-  /* Estilos para .docentes y .docente */
   .docentes {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -1374,7 +1362,7 @@ strong {
     flex-direction: column;
     text-align: center;
     background-color: #F9FAE5;
-    border-color: transparent; /* oculta borde visible en móvil */
+    border-color: transparent; 
   }
 
   .docente img {
@@ -1392,7 +1380,6 @@ strong {
     line-height: 24px;
   }
 
-  /* Estilos para header y contacto (los que pasaste antes) */
   header {
     flex-direction: column;
     align-items: center;
