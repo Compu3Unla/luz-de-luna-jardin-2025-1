@@ -1229,7 +1229,6 @@ strong {
   .contacto-sedes img {
     max-width: 235px;
     max-height: 300px;
-    /* o lo que necesites */
     width: 100%;
     height: auto;
     object-fit: cover;
