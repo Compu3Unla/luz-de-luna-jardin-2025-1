@@ -22,10 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
       main.classList.remove('oculto');
       footer.classList.remove('oculto');
 
+
       sessionStorage.setItem('videoVisto', 'true');
     });
   }
 });
+  
 document.addEventListener('DOMContentLoaded', (event) => {
     const loaderContainer = document.getElementById('loader'); 
     const successContainer = document.getElementById('listo'); 
