@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Enviando...</title>
+  <link rel="stylesheet" href="css/loader.css">
+</head>
+<body>
+
+  <div id="statusMessage" class="status-message">
+    <img id="loadingIcon" src="img/cargando.png" alt="Enviando..." width="60" height="60">
+    <img id="successIcon" src="img/enviado.png" alt="Listo!" width="60" height="60" style="display: none;">
+    <span id="statusText">Enviando...</span>
+  </div>
+
+  <script src="js/loader.js"></script>
+</body>
+</html>
