@@ -1173,6 +1173,145 @@ strong {
   margin: 0px 0px 0px 30px;
 }
 
+@media screen and (max-width: 600px) {
+
+  .elemento img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .elemento h6 {
+    margin-left: 100px;
+  }
+
+  .comunidad-actividades h3 {
+    position: relative;
+    right: 90px;
+    top: 250px;
+    text-align: center;
+    line-height: 80px;
+
+  }
+
+ .comunidad-actividades p {
+  position: relative;
+  right: 120px;
+  top: 280px;
+  width: 480px;
+  font-size: 20px;
+  text-align: center;
+ 
+ }
+
+ .contornos-izq {
+  margin: 0px 10px 50px 5px;
+  border-radius: 8%;
+  width: 350px;
+  height: 165px;
+  position: relative;
+  top: 6px;
+ }
+
+ .contornos-izq p {
+  font-size: 16;
+  width: 250px;
+  height: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 5px;
+  line-height: 27px;
+  
+ }
+
+ .contornos-izq h5 {
+  font-size: 30px;
+  margin-top: 0px;
+ }
+
+ .lado-izquierdouno-act {
+  position: relative;
+  right: 125px;
+ }
+
+   .lado-izquierdodos-act {
+  position: relative;
+  right: 125px;
+ }
+  
+
+ .lado-izquierdotres-act {
+  position: relative;
+  right: 125px;
+ }
+  
+
+.lado-izquierdouno-act img {
+  height: 185px;
+  width: 200px;
+  position: relative;
+  right: 10px;
+ }
+
+
+.lado-izquierdodos-act img {
+  height: 185px;
+  width: 200px;
+  
+ }
+
+
+ .lado-izquierdotres-act img {
+  height: 185px;
+  width: 200px;
+ }
+
+
+  .lado-derecho-act img {
+    height: 185px;
+    width: 200px;
+    position: relative;
+  }
+
+  .lado-derecho-act {
+    position: relative;
+    bottom: 80px;
+    
+  }
+
+  .contornos-der {
+    margin: 0px 10px 50px 20px;
+    border-radius: 8%;
+    border-bottom: 5px solid #0B53AA;
+    width: 335px;
+    height: 170px;
+    position: relative;
+    left: 150px;
+    bottom: 180px;
+    
+    
+  }
+
+  .contornos-der h5 {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+
+  .contorno-der p {
+    font-size: 16;
+    width: 180px;
+    height: 10px;
+    position:relative;
+    bottom: 5px;
+    line-height: 26px;
+    margin-left: 10px;
+  }
+
+  .lado-derecho-act img {
+    position: relative;
+    right: 185px;
+  }
+}
+
 
 
 /* CIRCULO DE CARGA */
@@ -1300,9 +1439,7 @@ strong {
 
 @media screen and (max-width: 600px) {
 
-  .comunidad-actividades p {
-    font-size: 100px;
-  }
+ 
   
   
 }
