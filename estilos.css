@@ -646,13 +646,12 @@ footer {
 
 
 .fondo-actividades {
-  margin-top: 100px;
   background-image: url("img/fondo-actividades.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+ 
   
 }
 
@@ -686,7 +685,7 @@ footer {
  display: flex;
  justify-content: start;
  position: relative; 
- top: 180px; 
+ top: 230px; 
  margin-left: 50px;
 }
 
@@ -696,7 +695,7 @@ footer {
   margin-top: 40px;
   scroll-snap-type: x mandatory;
   position: relative;
-  top: 150px;
+  top: 200px;
   z-index: 2;
   border-radius: 20px;
   
@@ -714,19 +713,19 @@ footer {
 }
 
 .elemento img {
-  width: 200px;
-  height: 200px; 
+  width: 400px;
+  height: 400px; 
 }
 
 .elemento h6 {
   font-family: 'Poppins', sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   text-align: center;
   color: #391C8A;
   margin: 10px;
-  margin-left: 40px;
-  width: 125px;
+  margin-left: 125px;
+  width: 150px;
 }
 
 .carrusel::-webkit-scrollbar {
@@ -765,7 +764,7 @@ footer {
  align-items: flex-start;
  position: relative; 
  top: 300px;
- margin-left: 35px;
+ margin-left: 150px;
 }
 
 .comunidad-actividades p {
@@ -775,18 +774,18 @@ footer {
   line-height: 30px;
   color: #9243A1;
   text-align: left;
-  width: 580px;
+  width: 660px;
   position: relative;
   top: 300px;
-  margin-left: 35px;
+  margin-left: 150px;
 }
 
 .lado-izquierdouno-act {
   display: flex;
   flex-direction: column;
   position: relative;
-  right: 115px;
-  top: 140px;   
+  right: 0px;
+  top: 200px;   
 }
 
 .lado-izquierdouno-act img {
@@ -802,15 +801,14 @@ footer {
   display: flex;
   flex-direction: column;
   position: relative;
-  right: 115px;
-  bottom: 15px;
+  top: 40px;
 }
 
 .lado-izquierdodos-act img {
   display: flex;
   justify-content: flex-start;
   position: relative;
-  top: 190px;
+  top: 180px;
   left: 150px;
   z-index: 20;
 }
@@ -819,8 +817,8 @@ footer {
   display: flex;
   flex-direction: column;
   position: relative;
-  right: 115px;
-  bottom: 140px;
+  bottom: 100px;
+  
 }
 
 .lado-izquierdotres-act img {
@@ -836,10 +834,12 @@ footer {
 .contornos-izq { 
   margin: 0px 0px 50px 50px;
   border-radius: 8%;
-  width: 400px;
+  width: 450px;
+  height: 175px;
   border: 5px solid #0B53AA;
   position: relative;  
-  left: 250px;
+  bottom: 20px;
+  left: 300px;
   z-index: 1;
 }
 
@@ -849,45 +849,50 @@ footer {
   font-size: 35px; 
   color: #391C8A;
   text-align: left;
-  margin-left: 70px;
+  margin-top: 5px;
+  margin-left: 72px;
 }
 
 .contornos-izq p {
   font-family: 'Poppins', sans-serif;
-  font-size: 17px;
+  font-size: 20px;
   color: #0B53AA;
   text-align: left;
-  margin: 0px 10px 10px 60px;
+  margin: 0px 35px 10px 75px;
 }
 
+.secciontres-actividades {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end ;
+}
 
 .lado-derecho-act {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-end;
   position: relative;
-  margin-right: 50px;
-  bottom: 600px;
+  margin-right: 150px;
+  bottom: 770px;
+  position: relative;
+}
+  
+.lado-derecho-act img {
+  position: absolute;
+  bottom: 1;
+  z-index: 2;
   
 }
 
-.lado-derecho-act img {
-  position: relative;
-  left: 569px;
-  bottom: 150px;
-  margin-right: 20px;
-  z-index: 10;
-
-}
-
 .contornos-der { 
-  margin: 0px 0px 50px 50px;
-  border-radius: 8%;
-  width: 485px;
+  margin-right: 12px;
+  border-radius: 8% 8% 0% 0%;
+  width: 670px;
   height: 150px;
   border: 5px solid #0B53AA;
-  position: relative;
-  bottom: 280px;  
+  border-bottom: 0px;
+  position: absolute;
+  bottom: 0;
   z-index: 1;
 }
 
@@ -897,13 +902,14 @@ footer {
   font-size: 35px; 
   color: #391C8A;
   text-align: left;
-  margin-left: 70px;
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
 .contornos-der p {
   font-family: 'Poppins', sans-serif;
-  font-size: 17px;
+  font-size: 20px;
   color: #0B53AA;
   text-align: left;
-  margin: 0px 20px 10px 30px;
+  margin: 0px 0px 0px 30px;
 }
