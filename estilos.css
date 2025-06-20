@@ -337,7 +337,7 @@ footer {
 }
 
 .imagen-principal {
-  width: 589px;
+  width: 513px;
   height: 478px;
   border-radius: 10px;
   object-fit: cover;
@@ -1083,3 +1083,5 @@ footer {
     opacity: 1;
   }
 }
+
+
