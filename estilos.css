@@ -1318,18 +1318,24 @@ strong {
 
 }    /*media index*/
 @media screen and (max-width: 600px) {
-  /* TITULOS */
+
+  #presentación img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
   #presentación h1 {
-    font-size: 80px;
+    font-size: 60px;
     text-align: center;
   }
 
   #presentación h4 {
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
   }
 
-
+ 
   .jardin-section {
     flex-direction: column;
     padding: 20px;
@@ -1374,5 +1380,4 @@ strong {
     font-size: 16px;
     line-height: 24px;
   }
-
 }
