@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
   
-});
 document.addEventListener('DOMContentLoaded', (event) => {
     const loaderContainer = document.getElementById('loader'); 
     const successContainer = document.getElementById('listo'); 
