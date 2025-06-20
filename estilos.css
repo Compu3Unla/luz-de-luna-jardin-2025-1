@@ -145,6 +145,7 @@ img {
 .jardin-section {
   display: flex;
   gap: 30px;
+  justify-content: center;
   border: 3px solid #8A4695;
   border-radius: 20px;
   padding: 40px;
@@ -1169,100 +1170,53 @@ strong {
 
 /* --- MEDIA EDUCACION --- */
 
-@media (max-width: 600px) {
-  .logo img {
-    width: 150px;
-    margin: 20px auto;
-    display: block;
-  }
 
-  .main-niveles h2 {
-    font-size: 1.8em;
-    text-align: center;
-    padding: 0 15px;
-  }
-
-  .texto-descriptivo {
-    font-size: 1em;
-    padding: 0 20px;
-    text-align: center;
-  }
-
-  .formacion h3,
-  .talleres h3,
-  .texto-tipos {
-    margin-left: 20px;
-    text-align: center;
-    margin-right: 20px;
+@media (max-width: 1024px) {
+  .formacion h3 {
+    margin-left: 50px;
   }
 
   .nivel {
-    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
   }
 
   .imagen-principal {
-    max-width: 90%;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
   }
 
   .info h5 {
-    font-size: 1.3em;
-    margin-top: 15px;
+    text-align: center;
   }
 
   .info p {
-    max-width: 95%;
-    font-size: 0.9em;
-    margin: 0 auto 10px auto;
-  }
-
-  .info p span {
-    display: block;
-    margin-bottom: 5px;
+    margin-right: 0;
+    max-width: 80%;
+    margin: 0 auto 15px auto;
+    text-align: center;
   }
 
   .galeria {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .galeria img {
-    width: 80%;
-    max-width: 250px;
-    margin-bottom: 10px;
+    width: 45%;
+    height: auto;
+    max-width: 200px;
+  }
+
+  .talleres h3,
+  .texto-tipos {
+    margin-left: 50px;
   }
 
   .carrusel-wrapper {
-    padding: 0 20px;
-  }
-
-  .contenedor-carrusel {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .tarjeta-taller {
-    width: 90%;
-    max-width: 350px;
-    margin: 0 auto;
-  }
-
-  .tarjeta-taller img,
-  .tarjeta-taller video {
-    width: 100%;
-    height: auto;
-  }
-
-  .tarjeta-taller h5 {
-    font-size: 1.2em;
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  .tarjeta-taller p {
-    font-size: 0.9em;
-    text-align: center;
-    padding: 0 10px;
+    padding: 0 50px;
   }
 }
 
