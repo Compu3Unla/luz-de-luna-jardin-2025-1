@@ -93,13 +93,12 @@ img {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  padding: 20px;
+  padding: 0px;
 }
 
 .titulo-video {
   background-color: #F9FAE5;
-  width: 1920px;
-  max-width: 90vw;
+  width: 100vw;
   height: 176px;
   display: flex;
   justify-content: center;
@@ -107,8 +106,9 @@ img {
   font-family: 'Barrio', cursive;
   font-size: 96px;
   color: #0B53AA;
-  margin: 0 auto;
+  margin: 0;
   border-radius: 8px;
+  position: relative;
 }
 
 .boton-inicio {
