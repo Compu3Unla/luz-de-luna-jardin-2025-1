@@ -655,7 +655,7 @@ footer {
 
 
 /* CIRCULO DE CARGA */
-body {
+.rotador{ 
   background-image: url("img/fondoload.png"); 
   background-size: cover;
   background-position: center;
