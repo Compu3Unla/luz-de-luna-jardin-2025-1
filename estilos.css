@@ -1169,6 +1169,7 @@ strong {
 
 /* --- MEDIA EDUCACION --- */
 
+
 @media (max-width: 1024px) {
   .formacion h3 {
     margin-left: 50px;
@@ -1215,5 +1216,99 @@ strong {
 
   .carrusel-wrapper {
     padding: 0 50px;
+  }
+
+
+  /*media ,mobile contactos*/
+
+  @media (max-width: 600px) {
+
+    header {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .nav-button {
+      width: 100%;
+      font-size: 18px;
+    }
+
+    #contenedor-contactanos-sucursales {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .logo-contacto img {
+      width: 200px;
+      height: auto;
+    }
+
+    .contacto-contactanos-izq,
+    .contacto-nuestras-sucursales-der {
+      max-width: 100%;
+      padding: 10px;
+    }
+
+    .contacto-sedes {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contacto-sedes img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .textos-info-sedes1,
+    .textos-info-sedes2 {
+      flex-direction: column;
+      max-width: 100%;
+      padding-left: 5%;
+    }
+
+    .contenedor-section-formulario {
+      padding-left: 5%;
+      padding-right: 5%;
+      text-align: center;
+    }
+
+    .linea1,
+    .linea2 {
+      display: none;
+    }
+
+    .primera-fila-doble {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .campo input,
+    .campo textarea {
+      width: 100%;
+    }
+
+    form {
+      padding: 10px;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    footer {
+      height: auto;
+      padding: 20px 0;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
   }
 }
