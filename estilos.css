@@ -1298,6 +1298,14 @@ strong {
 }
 
 
+@media screen and (max-width: 600px) {
+
+  .comunidad-actividades p {
+    font-size: 100px;
+  }
+  
+  
+}
 
 
 
