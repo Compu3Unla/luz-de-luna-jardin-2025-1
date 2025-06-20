@@ -673,7 +673,7 @@ footer {
 
 
 body {
-  background-image: url("../img/fondoload.png"); /* Esta ruta asume que estilos.css está en 'css/'. Si no, ajusta a "img/fondoload.png" */
+  background-image: url("img/fondoload.png"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -699,15 +699,9 @@ body {
   text-align: center;
 }
 
-.contenedor-loader p {
-  font-weight: 700;
-  font-size: 2.5em;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  color: #094c9b;
-}
 
-/* Animación de giro para la imagen .cargando (circulo.png) */
+
+/* Animación de giro para la imagen */
 @keyframes girar {
   from {
     transform: rotate(0deg);
@@ -718,24 +712,15 @@ body {
 }
 
 .cargando {
-  animation: girar 2s linear infinite; /* ¡Esto hará que tu imagen circulo.png gire! */
-  width: 150px;
-  height: 150px;
+  animation: girar 2s linear infinite; 
+  width: 200px;
+  height: 200px;
 }
 
 .loader-circle {
-  display: none; /* ¡¡¡Esta línea OCULTA el div de progreso que no quieres ver!!! */
+  display: none; 
 }
 
-/* @keyframes cargar ya no es funcional si .loader-circle está oculto */
-@keyframes cargar {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .contenedor-listo {
   display: none;
@@ -754,31 +739,37 @@ body {
 }
 
 .texto-listo {
-  font-size: 2.5em;
-  font-weight: 700;
+  font-size: 70px;
+  font-weight: 300;
   margin-bottom: 30px;
   color: #094c9b;
 }
 
 .check-final {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   margin-bottom: 40px;
 }
 
 .boton-volver {
   display: inline-block;
   padding: 15px 30px;
-  background-color: #094c9b;
-  color: white;
+  background-color: #E4E9F4;
+  color: #0B53AA; 
   text-decoration: none;
   border-radius: 8px;
-  font-size: 1.2em;
-  transition: background-color 0.3s ease;
+  font-family: 'Baloo', cursive;
+  font-size: 24px;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .boton-volver:hover {
-  background-color: #063a75;
+  background-color: #063a75; 
+  color: #FFFFFF; 
 }
 
 @keyframes scaleIn {
