@@ -1309,7 +1309,6 @@ strong {
 
   .botones-tel-mail-izq {
     flex-direction: column;
-    align-items: center;
     gap: 10px;
   }
 
