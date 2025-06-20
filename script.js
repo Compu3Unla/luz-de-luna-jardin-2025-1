@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const footer = document.querySelector('footer');
 
 
-  const yaVioVideo = localStorage.getItem('videoVisto');
+  const videoVisto = sessionStorage.getItem('videoVisto');
 
-  if (yaVioVideo === 'true') {
+  if (videoVisto === 'true') {
 
     pantalla.style.display = 'none';
     header.classList.remove('oculto');
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       main.classList.remove('oculto');
       footer.classList.remove('oculto');
 
-      localStorage.setItem('videoVisto', 'true');
+      sessionStorage.setItem('videoVisto', 'true');
     });
   }
 });
