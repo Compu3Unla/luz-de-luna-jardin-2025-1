@@ -10,5 +10,6 @@ Entre los cambios que hicimos al diseño original, uno de los más importantes f
 ![{D13844F7-AC7B-497E-850F-F14EE17C6F1D}](https://github.com/user-attachments/assets/a2585418-65e8-4230-b5b4-d641bc2ff3fe)
 ![{A9C7537A-48BC-4B22-BE09-8EAFD0F4F701}](https://github.com/user-attachments/assets/aa88cdf0-cdd5-48ae-b107-b74b9251ecce)
 
-Trabajo de cada inetgrante: 
-Al ser 4 html nos dividimos uno para cada uno
+Trabajo de cada integrante: 
+
+  Gerez Camila: En mi caso, me encargué de desarrollar la sección correspondiente a los niveles educativos, creando su estructura en HTML. También diseñé y codifiqué el menú de navegación (nav), los enlaces entre las distintas páginas del sitio y el círculo de carga, el cual fue implementado con JavaScript para mejorar la experiencia de espera durante la carga inicial. Dentro de mi HTML incluí una galería de imágenes. En la idea original diseñada en Figma, las imágenes podían arrastrarse hacia la izquierda para ver más contenido. Sin embargo, al implementarlo, noté que ese tipo de desplazamiento no era muy fluido ni intuitivo para el usuario. Por eso, decidí agregar una barra de desplazamiento horizontal debajo de la galería, como una pista visual que indicara que las imágenes podían moverse, haciendo la interacción más clara y accesible.
