@@ -23,3 +23,4 @@ La resolución de pantalla utilizada por todos los integrantes fue de **1920x108
 El editor de código utilizado fue **Visual Code**.
 
 ## Figma
+https://www.figma.com/design/Zz8JpRIU0EadyDJfk3WGyJ/G8---Jard%C3%ADn-luz-de-luna?node-id=745-144&t=U2qxd6A9nO01Osy8-1
