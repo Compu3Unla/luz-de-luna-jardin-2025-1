@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const footer = document.querySelector('footer');
 
   boton.addEventListener('click', () => {
-    pantalla.style.display = 'none';  
-    header.style.display = 'flex';   
-    main.style.display = 'block';     
-    footer.style.display = 'block';    
+    pantalla.style.display = 'none'; // Oculta el video
+    header.classList.remove('oculto'); // Muestra el header
+    main.classList.remove('oculto');   // Muestra el main
+    footer.classList.remove('oculto'); // Muestra el footer
   });
 });
 
