@@ -1225,6 +1225,7 @@ strong {
 
 @media screen and (max-width: 600px) {
 
+  /*contacto*/
   header {
     flex-direction: column;
     align-items: center;
@@ -1242,7 +1243,6 @@ strong {
     flex-direction: column;
     justify-content: center;
   }
-
 
   .contacto-contactanos-izq,
   .contacto-nuestras-sucursales-der {
@@ -1274,7 +1274,6 @@ strong {
 
   .contenedor-section-formulario {
     align-items: center;
-    text-align: center;
   }
 
   .formulario {
@@ -1314,6 +1313,7 @@ strong {
     gap: 10px;
   }
 
+  /*cierre contacto*/
 
 
 }
