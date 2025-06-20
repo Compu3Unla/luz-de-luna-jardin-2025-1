@@ -361,6 +361,8 @@ footer {
   margin-right: 280px;
 }
 
+
+
 .info p span {
   color: #0B53AA;
   font-weight: bold;
@@ -640,154 +642,274 @@ footer {
   flex: 1;
 }
 
-.texto-sucursales {
-  font-family: "Baloo 2";
-  font-size: 24px;
-  color: #391C8A;
-  font-weight: bold;
-  padding-top: 2%;
+/*ACTIVIDADES*/
+
+
+.fondo-actividades {
+  background-image: url("img/fondo-actividades.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+ 
+  
 }
 
-.info-formulario {
-  font-family: "Poppins";
-  font-weight: medium;
+.main-actividades {
+
+  flex: 1;
+  position: relative;
+  text-align: center;
+  padding: 100px 20px 150px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+
+.texto-descriptivo-actividades {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #F9FAE5;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.titulo-actividades h3 {
+ font-family: 'Baloo';
+ font-size: 70px; 
+ font-weight: 500;
+ display: flex;
+ justify-content: start;
+ position: relative; 
+ top: 230px; 
+ margin-left: 50px;
+}
+
+.carrusel {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 40px;
+  scroll-snap-type: x mandatory;
+  position: relative;
+  top: 200px;
+  z-index: 2;
+  border-radius: 20px;
+  
+}
+
+.contenedor-car {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 30px; 
+}
+
+.elemento {
+  flex: 1 0 auto;
+  margin: 0 50px;
+}
+
+.elemento img {
+  width: 400px;
+  height: 400px; 
+}
+
+.elemento h6 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #391C8A;
+  margin: 10px;
+  margin-left: 125px;
+  width: 150px;
+}
+
+.carrusel::-webkit-scrollbar {
+  height: 12px;
+}
+
+.carrusel::-webkit-scrollbar-track {
+  background: #391C8A;
+  border-radius: 10px;
+}
+
+.carrusel::-webkit-scrollbar-thumb {
+  background-color: #F9FAE5;
+  border-radius: 10px;
+  border: 3px solid #391C8A;
+}
+
+.carrusel::-webkit-scrollbar-thumb:hover {
+  background-color: #E3E4CB;
+}
+
+
+
+.secciondos-actividades {
+  display: flex;
+  flex-direction: column;
+}
+
+.comunidad-actividades h3{
+ font-family: 'Baloo';
+ font-size: 70px; 
+ color: #0B53AA;
+ font-weight: 500;
+ display: flex;
+ justify-content: flex-start;
+ align-items: flex-start;
+ position: relative; 
+ top: 300px;
+ margin-left: 150px;
+}
+
+.comunidad-actividades p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #9243A1;
+  text-align: left;
+  width: 660px;
+  position: relative;
+  top: 300px;
+  margin-left: 150px;
+}
+
+.lado-izquierdouno-act {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 0px;
+  top: 200px;   
+}
+
+.lado-izquierdouno-act img {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: 190px;
+  left: 150px;
+  z-index: 20;
+}
+
+.lado-izquierdodos-act {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 40px;
+}
+
+.lado-izquierdodos-act img {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: 180px;
+  left: 150px;
+  z-index: 20;
+}
+
+.lado-izquierdotres-act {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 100px;
+  
+}
+
+.lado-izquierdotres-act img {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: 190px;
+  left: 150px;
+  z-index: 20;
+}
+
+
+.contornos-izq { 
+  margin: 0px 0px 50px 50px;
+  border-radius: 8%;
+  width: 450px;
+  height: 175px;
+  border: 5px solid #0B53AA;
+  position: relative;  
+  bottom: 20px;
+  left: 300px;
+  z-index: 1;
+}
+
+.contornos-izq h5 {
+  font-family: 'Baloo 2', cursive;
+  font-weight: bold;
+  font-size: 35px; 
+  color: #391C8A;
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 72px;
+}
+
+.contornos-izq p {
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   color: #0B53AA;
+  text-align: left;
+  margin: 0px 35px 10px 75px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body {
-  background-image: url("../img/fondoload.png"); /* Esta ruta asume que estilos.css está en 'css/'. Si no, ajusta a "img/fondoload.png" */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #fefde8;
-  margin: 0;
-  height: 100vh;
+.secciontres-actividades {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, sans-serif;
+  flex-direction: column;
+  align-items: flex-end ;
+}
+
+.lado-derecho-act {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   position: relative;
-  overflow: hidden;
-  color: #094c9b;
+  margin-right: 150px;
+  bottom: 770px;
+  position: relative;
+}
+  
+.lado-derecho-act img {
+  position: absolute;
+  bottom: 1;
+  z-index: 2;
+  
 }
 
-.contenedor-loader {
-  width: 100%;
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.contenedor-loader p {
-  font-weight: 700;
-  font-size: 2.5em;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  color: #094c9b;
-}
-
-/* Animación de giro para la imagen .cargando (circulo.png) */
-@keyframes girar {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.cargando {
-  animation: girar 2s linear infinite; /* ¡Esto hará que tu imagen circulo.png gire! */
-  width: 150px;
+.contornos-der { 
+  margin-right: 12px;
+  border-radius: 8% 8% 0% 0%;
+  width: 670px;
   height: 150px;
+  border: 5px solid #0B53AA;
+  border-bottom: 0px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
 }
 
-.loader-circle {
-  display: none; /* ¡¡¡Esta línea OCULTA el div de progreso que no quieres ver!!! */
+.contornos-der h5 {
+  font-family: 'Baloo 2', cursive;
+  font-weight: bold;
+  font-size: 35px; 
+  color: #391C8A;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
-/* @keyframes cargar ya no es funcional si .loader-circle está oculto */
-@keyframes cargar {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.contenedor-listo {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.contenedor-listo.visible {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.texto-listo {
-  font-size: 2.5em;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #094c9b;
-}
-
-.check-final {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 40px;
-}
-
-.boton-volver {
-  display: inline-block;
-  padding: 15px 30px;
-  background-color: #094c9b;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 1.2em;
-  transition: background-color 0.3s ease;
-}
-
-.boton-volver:hover {
-  background-color: #063a75;
-}
-
-@keyframes scaleIn {
-  from {
-    transform: scale(0);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+.contornos-der p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #0B53AA;
+  text-align: left;
+  margin: 0px 0px 0px 30px;
 }
