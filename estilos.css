@@ -1316,4 +1316,63 @@ strong {
   /*cierre contacto*/
 
 
+}    /*media index*/
+@media screen and (max-width: 600px) {
+  /* TITULOS */
+  #presentación h1 {
+    font-size: 80px;
+    text-align: center;
+  }
+
+  #presentación h4 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+  .jardin-section {
+    flex-direction: column;
+    padding: 20px;
+    max-width: 90%;
+    margin: 0 auto 40px auto;
+  }
+
+  .texto-jardin {
+    max-width: 100%;
+  }
+
+  .jardin-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .docentes {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 90%;
+    padding: 40px 10px 60px 10px;
+    margin: 0 auto;
+  }
+
+  .docente {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .docente img {
+    width: 150px;
+    height: auto;
+    margin: 0 auto 15px auto;
+  }
+
+  .texto h5 {
+    font-size: 28px;
+  }
+
+  .texto p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
 }
