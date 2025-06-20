@@ -656,3 +656,93 @@ footer {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === CIRCULO DE CARGA === */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  background-color: #fefee7; /* fondo claro */
+}
+
+.fondo {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Animación de carga */
+.contenedor-loader {
+  text-align: center;
+}
+
+.cargando {
+  width: 80px;
+  height: 80px;
+  animation: girar 1s linear infinite;
+}
+
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Estado “¡Listo!” */
+.contenedor-listo {
+  text-align: center;
+}
+
+.texto-listo {
+  font-size: 2em;
+  font-weight: bold;
+  color: #195bbf;
+  margin-bottom: 20px;
+}
+
+.circulo-azul {
+  background-color: #195bbf;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.circulo-azul img {
+  width: 40px;
+  height: 40px;
+}
+
+.boton-volver {
+  background-color: #e7e8fc;
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: #195bbf;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+

@@ -6,11 +6,19 @@
   <link rel="stylesheet" href="css/loader.css">
 </head>
 <body>
+  <div class="fondo">
+    <div class="contenedor-loader" id="loader">
+      <img src="img/cargando.png" alt="Cargando" class="cargando">
+      <p>Enviando</p>
+    </div>
 
-  <div id="statusMessage" class="status-message">
-    <img id="loadingIcon" src="img/cargando.png" alt="Enviando..." width="60" height="60">
-    <img id="successIcon" src="img/enviado.png" alt="Listo!" width="60" height="60" style="display: none;">
-    <span id="statusText">Enviando...</span>
+    <div class="contenedor-listo" id="listo" style="display: none;">
+      <p class="texto-listo">¡Listo!</p>
+      <div class="circulo-azul">
+        <img src="img/tilde.png" alt="Tilde">
+      </div>
+      <a href="index.html" class="boton-volver">Volver al inicio</a>
+    </div>
   </div>
 
   <script src="js/loader.js"></script>
