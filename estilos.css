@@ -779,8 +779,8 @@ strong {
 
 /*espacio para agregar estilos contacto (margen por si hay que borrar y combinar)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-/*ACTIVIDADES*/
 
+/*ACTIVIDADES*/
 
 .fondo-actividades {
   background-image: url("img/fondo-actividades.png");
@@ -788,22 +788,16 @@ strong {
   background-size: cover;
   display: flex;
   flex-direction: column;
-
-
 }
 
 .main-actividades {
-
   flex: 1;
   position: relative;
   text-align: center;
   padding: 100px 20px 150px;
   display: flex;
   flex-direction: column;
-
 }
-
-
 
 .texto-descriptivo-actividades {
   font-family: 'Poppins', sans-serif;
@@ -825,6 +819,8 @@ strong {
   top: 230px;
   margin-left: 50px;
 }
+
+/*carrusel-actividades*/
 
 .carrusel {
   overflow-x: auto;
@@ -884,7 +880,7 @@ strong {
   background-color: #E3E4CB;
 }
 
-
+/*secciones-actividades*/
 
 .secciondos-actividades {
   display: flex;
@@ -909,7 +905,7 @@ strong {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
-  color: #9243A1;
+  color: #391C8A;
   text-align: left;
   width: 660px;
   position: relative;
@@ -1010,7 +1006,7 @@ strong {
   align-items: flex-end;
   position: relative;
   margin-right: 150px;
-  bottom: 770px;
+  bottom: 820px;
   position: relative;
 }
 
@@ -1050,6 +1046,8 @@ strong {
   text-align: left;
   margin: 0px 0px 0px 30px;
 }
+
+/*fin-actividades*/
 
 
 
