@@ -1315,12 +1315,14 @@ strong {
   /*cierre contacto*/
 
 
-}   @media screen and (max-width: 600px) {
+}  @media screen and (max-width: 600px) {
 
+  /* Estilos para #presentación */
   #presentación {
     height: auto;
     padding-top: 30px;
     padding-bottom: 20px;
+    margin-bottom: 30px; /* separación extra abajo */
   }
 
   #presentación img {
@@ -1339,15 +1341,14 @@ strong {
     text-align: center;
   }
 
-  /* resto de estilos */
-
+  /* Estilos para .jardin-section */
   .jardin-section {
     flex-direction: column;
     padding: 20px;
     max-width: 90%;
     margin: 0 auto 40px auto;
     background-color: #F9FAE5;
-    border-color: transparent; /* sacamos borde visible en móvil */
+    border-color: transparent; /* oculta el borde en móvil */
   }
 
   .texto-jardin {
@@ -1360,6 +1361,7 @@ strong {
     border-radius: 15px;
   }
 
+  /* Estilos para .docentes y .docente */
   .docentes {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -1372,7 +1374,7 @@ strong {
     flex-direction: column;
     text-align: center;
     background-color: #F9FAE5;
-    border-color: transparent; /* sacamos borde visible en móvil */
+    border-color: transparent; /* oculta borde visible en móvil */
   }
 
   .docente img {
@@ -1389,4 +1391,92 @@ strong {
     font-size: 16px;
     line-height: 24px;
   }
+
+  /* Estilos para header y contacto (los que pasaste antes) */
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+    padding: 10px 0;
+  }
+
+  .main-contacto {
+    padding: 3%;
+  }
+
+  .contenedor-contactanos-sucursales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contacto-contactanos-izq,
+  .contacto-nuestras-sucursales-der {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .contacto-nuestras-sucursales-der {
+    padding: 20px;
+    flex-direction: column;
+    padding-bottom: 5%;
+  }
+
+  .linea2 {
+    top: 100%;
+  }
+
+  .contacto-sedes {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .textos-info-sedes1,
+  .textos-info-sedes2 {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  .contenedor-section-formulario {
+    align-items: center;
+  }
+
+  .formulario {
+    padding: 1rem;
+  }
+
+  form {
+    padding: 20px;
+    border-radius: 30px;
+  }
+
+  .primera-fila-doble {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .campo input,
+  .campo textarea {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .h6,
+  .info-formulario,
+  p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .botones-tel-mail-izq {
+    flex-direction: column;
+    gap: 10px;
+  }
+
 }
