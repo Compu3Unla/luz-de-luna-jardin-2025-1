@@ -1314,8 +1314,7 @@ strong {
 
   /*cierre contacto*/
 
-
-}   @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
   #presentación {
     height: auto;
@@ -1339,16 +1338,16 @@ strong {
     text-align: center;
   }
 
-  /* resto de estilos */
+
 
   .jardin-section {
     flex-direction: column;
     padding: 20px;
     max-width: 90%;
     margin: 0 auto 40px auto;
-    background-color: #F9FAE5; 
-  
-}
+    background-color: #F9FAE5;
+    border-color: transparent; 
+  }
 
   .texto-jardin {
     max-width: 100%;
@@ -1371,6 +1370,8 @@ strong {
   .docente {
     flex-direction: column;
     text-align: center;
+    background-color: #F9FAE5;
+    border-color: transparent; 
   }
 
   .docente img {
