@@ -1236,6 +1236,7 @@ strong {
 
   .contacto-sedes {
     padding-top: 10px;
+    padding-left: 10px;
   }
 
   .textos-info-sedes1 {
@@ -1287,13 +1288,7 @@ strong {
     padding: 10px;
   }
 
-  /*cierre contacto*/
-
-
-}
-
-@media screen and (max-width: 600px) {
-
+  /*index*/
 
   #presentación {
     height: auto;
@@ -1371,10 +1366,8 @@ strong {
     font-size: 16px;
     line-height: 24px;
   }
-}
 
-/* media de actividades */
-@media screen and (max-width: 600px) {
+  /* media de actividades */
 
   .elemento img {
     width: 350px;
