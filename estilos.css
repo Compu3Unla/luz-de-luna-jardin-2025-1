@@ -621,7 +621,6 @@ footer {
 }
 
 
-
 .textos-info-sedes1 {
   display: flex;
   flex-direction: row;
@@ -644,14 +643,12 @@ footer {
 
 /*ACTIVIDADES*/
 
-
 .fondo-actividades {
   background-image: url("img/fondo-actividades.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
- 
   
 }
 
@@ -665,8 +662,6 @@ footer {
   flex-direction: column;
   
 }
-
-
 
 .texto-descriptivo-actividades {
   font-family: 'Poppins', sans-serif;
@@ -861,36 +856,6 @@ footer {
   margin: 0px 35px 10px 75px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body {
-  background-image: url("img/fondoload.png"); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #fefde8;
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end ;
-}
-
 .lado-derecho-act {
   display: flex;
   flex-direction: column;
@@ -927,16 +892,6 @@ body {
   z-index: 20;
 }
 
-
-
-/* Animación de giro para la imagen */
-@keyframes girar {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 .lado-izquierdodos-act {
   display: flex;
   flex-direction: column;
@@ -1039,39 +994,6 @@ body {
   color: #094c9b;
 }
 
-.check-final {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 40px;
-}
-
-.boton-volver {
-  display: inline-block;
-  padding: 15px 30px;
-  background-color: #E4E9F4;
-  color: #0B53AA; 
-  text-decoration: none;
-  border-radius: 8px;
-  font-family: 'Baloo', cursive;
-  font-size: 24px;
-  transition: background-color 0.3s ease, color 0.3s ease; 
-  width: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.boton-volver:hover {
-  background-color: #063a75; 
-  color: #FFFFFF; 
-  
-.lado-derecho-act img {
-  position: absolute;
-  bottom: 1;
-  z-index: 2;
-  
-}
-
 .contornos-der { 
   margin-right: 12px;
   border-radius: 8% 8% 0% 0%;
@@ -1100,4 +1022,128 @@ body {
   color: #0B53AA;
   text-align: left;
   margin: 0px 0px 0px 30px;
+}
+
+body {
+  background-image: url("img/fondoload.png"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fefde8;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end ;
+}
+
+.lado-derecho-act {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  margin-right: 150px;
+  bottom: 770px;
+  position: relative;
+}
+  
+.lado-derecho-act img {
+  position: absolute;
+  bottom: 1;
+  z-index: 2;
+  
+}
+
+.contenedor-loader {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+/* Animación de giro para la imagen */
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cargando {
+  animation: girar 2s linear infinite; 
+  width: 200px;
+  height: 200px;
+}
+
+.loader-circle {
+  display: none; 
+}
+
+
+.contenedor-listo {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.contenedor-listo.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.texto-listo {
+  font-size: 70px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: #094c9b;
+}
+
+.check-final {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 40px;
+}
+
+.boton-volver {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #E4E9F4;
+  color: #0B53AA; 
+  text-decoration: none;
+  border-radius: 8px;
+  font-family: 'Baloo', cursive;
+  font-size: 24px;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton-volver:hover {
+  background-color: #063a75; 
+  color: #FFFFFF; 
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
