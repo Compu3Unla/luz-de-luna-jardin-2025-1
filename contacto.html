@@ -10,10 +10,10 @@
 
 <body>
   <header>
-    <a href="#" class="nav-button">INICIO</a>
-    <a href="#" class="nav-button active">CONTACTO</a>
-    <a href="#" class="nav-button">ACTIVIDADES</a>
-    <a href="#" class="nav-button">NIVELES EDUCATIVOS</a>
+    <a href="index.html" class="nav-button">INICIO</a>
+    <a href="contacto.html" class="nav-button active">CONTACTO</a>
+    <a href="actividades.html" class="nav-button">ACTIVIDADES</a>
+    <a href="educacion.html" class="nav-button">NIVELES EDUCATIVOS</a>
   </header>
 
   <main class="main-contacto">
@@ -25,6 +25,7 @@
 
       <div class="contacto-contactanos-izq"> <!--contenedor contactanos -->
         <h3>Contactanos</h3>
+        <img src="img/iconos-contacto/ilustracion-lineas.svg" alt="Ilustración" class="linea1">
         <p class="h6">Estamos para escucharte. Te dejamos las direcciones de nuestras sucursales y nuestras redes
           sociales, solo estas a un click de nuestro teléfono y nuestro Gmail.</p>
         <br>
@@ -83,27 +84,39 @@
 
     <section class="contenedor-section-formulario"> <!--contenedor sección formulario -->
       <h3> Inscripción </h3>
-      <p class="info-formulario">Completá el formulario con el Asunto “inscripción” para recibir<br>toda la información
-        sobre los requisitos y
-        fechas.</p>
+      <img src="img/iconos-contacto/ilustracion-lineas.svg" alt="Ilustración" class="linea2">
+      <p class="info-formulario">Completá el formulario con el <strong>Asunto “inscripción”</strong> para
+        recibir<br>toda la información
+        sobre los <strong>requisitos y
+          fechas</strong>.</p>
     </section>
 
     <section class="formulario">
-      <form action="mailto:x@gmail.com.ar?subject=Email enviado desde formulario web jardín Luz de Luna" method="POST"
-        target="_blank" enctype="text/plain">
+      <form action="circulo.html" method="POST" id="miFormularioContacto">
 
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Sam Torres" required>
+        <div class="primera-fila-doble">
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Sam Torres" required>
+          </div>
 
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="sam.torres@ejemplo.com" maxlength="30" required>
+          <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="sam.torres@ejemplo.com" maxlength="30" required>
+          </div>
 
-        <label for="mensaje">Asunto</label>
-        <textarea id="mensaje" name="mensaje" maxlength="50" placeholder="Ej: Inscripción" rows="5" required></textarea>
+        </div>
 
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" maxlength="600"
-          placeholder="Quiero conocer las fechas de Inscripción para 2026" rows="5" required></textarea>
+        <div class="campo">
+          <label for="asunto">Asunto</label>
+          <textarea id="asunto" name="asunto" maxlength="50" placeholder="Ej: Inscripción" rows="2" required></textarea>
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" maxlength="600"
+            placeholder="Quiero conocer las fechas de Inscripción para 2026" rows="5" required></textarea>
+        </div>
 
         <button type="submit">Enviar</button>
       </form>
