@@ -1308,13 +1308,13 @@ strong {
 
 @media screen and (max-width: 600px) {
 
-  /* Estilos para #presentación */
+
   #presentación {
     height: auto;
     padding-top: 30px;
     padding-bottom: 20px;
     margin-bottom: 30px;
-    /* separación extra abajo */
+
   }
 
   #presentación img {
@@ -1333,7 +1333,7 @@ strong {
     text-align: center;
   }
 
-  /* Estilos para .jardin-section */
+
   .jardin-section {
     flex-direction: column;
     padding: 20px;
@@ -1341,7 +1341,7 @@ strong {
     margin: 0 auto 40px auto;
     background-color: #F9FAE5;
     border-color: transparent;
-    /* oculta el borde en móvil */
+
   }
 
   .texto-jardin {
@@ -1354,7 +1354,7 @@ strong {
     border-radius: 15px;
   }
 
-  /* Estilos para .docentes y .docente */
+
   .docentes {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -1368,7 +1368,7 @@ strong {
     text-align: center;
     background-color: #F9FAE5;
     border-color: transparent;
-    /* oculta borde visible en móvil */
+   
   }
 
   .docente img {
@@ -1386,3 +1386,143 @@ strong {
     line-height: 24px;
   }
 }
+ /* media de actividades */
+@media screen and (max-width: 600px) {
+
+  .elemento img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .elemento h6 {
+    margin-left: 100px;
+  }
+
+  .comunidad-actividades h3 {
+    position: relative;
+    right: 90px;
+    top: 250px;
+    text-align: center;
+    line-height: 80px;
+
+  }
+
+ .comunidad-actividades p {
+  position: relative;
+  right: 120px;
+  top: 280px;
+  width: 480px;
+  font-size: 20px;
+  text-align: center;
+ 
+ }
+
+ .contornos-izq {
+  margin: 0px 10px 50px 5px;
+  border-radius: 8%;
+  width: 350px;
+  height: 165px;
+  position: relative;
+  top: 6px;
+ }
+
+ .contornos-izq p {
+  font-size: 16;
+  width: 250px;
+  height: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 5px;
+  line-height: 27px;
+  
+ }
+
+ .contornos-izq h5 {
+  font-size: 30px;
+  margin-top: 0px;
+ }
+
+ .lado-izquierdouno-act {
+  position: relative;
+  right: 125px;
+ }
+
+   .lado-izquierdodos-act {
+  position: relative;
+  right: 125px;
+ }
+  
+
+ .lado-izquierdotres-act {
+  position: relative;
+  right: 125px;
+ }
+  
+
+.lado-izquierdouno-act img {
+  height: 185px;
+  width: 200px;
+  position: relative;
+  right: 10px;
+ }
+
+
+.lado-izquierdodos-act img {
+  height: 185px;
+  width: 200px;
+  
+ }
+
+
+ .lado-izquierdotres-act img {
+  height: 185px;
+  width: 200px;
+ }
+
+
+  .lado-derecho-act img {
+    height: 185px;
+    width: 200px;
+    position: relative;
+  }
+
+  .lado-derecho-act {
+    position: relative;
+    bottom: 80px;
+    
+  }
+
+  .contornos-der {
+    margin: 0px 10px 50px 20px;
+    border-radius: 8%;
+    border-bottom: 5px solid #0B53AA;
+    width: 335px;
+    height: 170px;
+    position: relative;
+    left: 150px;
+    bottom: 180px;
+    
+    
+  }
+
+  .contornos-der h5 {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+
+  .contorno-der p {
+    font-size: 16;
+    width: 180px;
+    height: 10px;
+    position:relative;
+    bottom: 5px;
+    line-height: 26px;
+    margin-left: 10px;
+  }
+
+  .lado-derecho-act img {
+    position: relative;
+    right: 185px;
+}
+}
+
