@@ -338,7 +338,7 @@ footer {
 }
 
 .imagen-principal {
-  width: 589px;
+  width: 513px;
   height: 478px;
   border-radius: 10px;
   object-fit: cover;
@@ -1140,17 +1140,6 @@ button:hover {
   display: none;
 }
 
-
-@keyframes cargar {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .contenedor-listo {
   display: none;
   flex-direction: column;
@@ -1213,3 +1202,5 @@ button:hover {
     opacity: 1;
   }
 }
+
+
