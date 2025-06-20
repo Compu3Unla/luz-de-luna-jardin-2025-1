@@ -145,7 +145,6 @@ img {
 .jardin-section {
   display: flex;
   gap: 30px;
-  justify-content: center;
   border: 3px solid #8A4695;
   border-radius: 20px;
   padding: 40px;
