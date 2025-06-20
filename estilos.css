@@ -1340,12 +1340,15 @@ strong {
   }
 
   /* resto de estilos */
+
   .jardin-section {
     flex-direction: column;
     padding: 20px;
     max-width: 90%;
     margin: 0 auto 40px auto;
-  }
+    background-color: #F9FAE5; 
+  
+}
 
   .texto-jardin {
     max-width: 100%;
