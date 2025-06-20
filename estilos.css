@@ -64,7 +64,7 @@ img {
   border-radius: 15px;
 }
 
-/* Video pantalla inicial */
+
 #pantalla-inicial {
   position: fixed;
   top: 0;
@@ -132,7 +132,7 @@ img {
   background-color: #ecebcf;
 }
 
-/*abro main*/
+
 #presentación {
   display: flex;
   flex-direction: column;
@@ -200,10 +200,7 @@ img {
   min-height: 100vh;
 }
 
-/* cierro main*/
 
-/* abro footer*/
-/* footer completo, hay que copiar y pegar las class y etiquetas tal cual+ <a><img></a> y <p>*/
 footer {
   width: 100%;
   margin: 0;
@@ -223,12 +220,9 @@ footer {
 }
 
 .footer-links p {
-  /* color del copy*/
   color: white;
 }
 
-
-/* cierro footer*/
 /*cierro index.html*/
 
 .nav-button {
@@ -246,13 +240,11 @@ footer {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Hover: fondo claro, texto violeta */
 .nav-button:hover {
   background-color: #F9FAE5;
   color: #9243A1;
 }
 
-/* Botón activo (que indica en que seccion estas) */
 .nav-button.active {
   background-color: #9243A1;
   color: #F9FAE5;
@@ -303,7 +295,6 @@ footer {
   line-height: 1.6;
 }
 
-/* Formación Académica */
 
 .formacion {
   padding: 40px;
@@ -375,8 +366,6 @@ footer {
   border-radius: 10px;
   box-shadow: 6px 10px rgba(0, 0, 0, 0.1);
 }
-
-/* Carrusel Talleres */
 
 .talleres {
   color: #F9FAE5;
@@ -530,7 +519,6 @@ footer {
 }
 
 .contenedor-contactanos-sucursales {
-  /*contenedor cotactanos - sedes*/
   display: flex;
   flex-wrap: wrap;
   gap: 10%;
@@ -557,7 +545,6 @@ footer {
 
 
 .contacto-contactanos-izq {
-  /*contenedor principal contactanos*/
   flex-direction: row;
   max-width: 600px;
   width: 100%;
@@ -603,7 +590,6 @@ footer {
   font-weight: bold;
 }
 
-/*decoración*/
 
 .contacto-nuestras-sucursales-der::before {
   content: "";
@@ -1225,7 +1211,6 @@ strong {
 
 @media screen and (max-width: 600px) {
 
-  /*contacto*/
   .nav-button {
     font-family: 'Baloo 2', cursive;
     font-weight: 600;
@@ -1310,13 +1295,13 @@ strong {
 
 @media screen and (max-width: 600px) {
 
-  /* Estilos para #presentación */
+
   #presentación {
     height: auto;
     padding-top: 30px;
     padding-bottom: 20px;
     margin-bottom: 30px;
-    /* separación extra abajo */
+
   }
 
   #presentación img {
@@ -1335,7 +1320,7 @@ strong {
     text-align: center;
   }
 
-  /* Estilos para .jardin-section */
+
   .jardin-section {
     flex-direction: column;
     padding: 20px;
@@ -1343,7 +1328,7 @@ strong {
     margin: 0 auto 40px auto;
     background-color: #F9FAE5;
     border-color: transparent;
-    /* oculta el borde en móvil */
+
   }
 
   .texto-jardin {
@@ -1356,7 +1341,7 @@ strong {
     border-radius: 15px;
   }
 
-  /* Estilos para .docentes y .docente */
+
   .docentes {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -1370,7 +1355,7 @@ strong {
     text-align: center;
     background-color: #F9FAE5;
     border-color: transparent;
-    /* oculta borde visible en móvil */
+
   }
 
   .docente img {
@@ -1386,5 +1371,145 @@ strong {
   .texto p {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+/* media de actividades */
+@media screen and (max-width: 600px) {
+
+  .elemento img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .elemento h6 {
+    margin-left: 100px;
+  }
+
+  .comunidad-actividades h3 {
+    position: relative;
+    right: 90px;
+    top: 250px;
+    text-align: center;
+    line-height: 80px;
+
+  }
+
+  .comunidad-actividades p {
+    position: relative;
+    right: 120px;
+    top: 280px;
+    width: 480px;
+    font-size: 20px;
+    text-align: center;
+
+  }
+
+  .contornos-izq {
+    margin: 0px 10px 50px 5px;
+    border-radius: 8%;
+    width: 350px;
+    height: 165px;
+    position: relative;
+    top: 6px;
+  }
+
+  .contornos-izq p {
+    font-size: 16;
+    width: 250px;
+    height: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 5px;
+    line-height: 27px;
+
+  }
+
+  .contornos-izq h5 {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+
+  .lado-izquierdouno-act {
+    position: relative;
+    right: 125px;
+  }
+
+  .lado-izquierdodos-act {
+    position: relative;
+    right: 125px;
+  }
+
+
+  .lado-izquierdotres-act {
+    position: relative;
+    right: 125px;
+  }
+
+
+  .lado-izquierdouno-act img {
+    height: 185px;
+    width: 200px;
+    position: relative;
+    right: 10px;
+  }
+
+
+  .lado-izquierdodos-act img {
+    height: 185px;
+    width: 200px;
+
+  }
+
+
+  .lado-izquierdotres-act img {
+    height: 185px;
+    width: 200px;
+  }
+
+
+  .lado-derecho-act img {
+    height: 185px;
+    width: 200px;
+    position: relative;
+  }
+
+  .lado-derecho-act {
+    position: relative;
+    bottom: 80px;
+
+  }
+
+  .contornos-der {
+    margin: 0px 10px 50px 20px;
+    border-radius: 8%;
+    border-bottom: 5px solid #0B53AA;
+    width: 335px;
+    height: 170px;
+    position: relative;
+    left: 150px;
+    bottom: 180px;
+
+
+  }
+
+  .contornos-der h5 {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+
+  .contorno-der p {
+    font-size: 16;
+    width: 180px;
+    height: 10px;
+    position: relative;
+    bottom: 5px;
+    line-height: 26px;
+    margin-left: 10px;
+  }
+
+  .lado-derecho-act img {
+    position: relative;
+    right: 185px;
   }
 }
