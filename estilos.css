@@ -825,6 +825,8 @@ footer {
  margin-left: 50px;
 }
 
+/*carrusel-actividades*/
+
 .carrusel {
   overflow-x: auto;
   overflow-y: hidden;
@@ -883,7 +885,7 @@ footer {
   background-color: #E3E4CB;
 }
 
-
+/*secciones-actividades*/
 
 .secciondos-actividades {
   display: flex;
@@ -1050,7 +1052,7 @@ footer {
   margin: 0px 0px 0px 30px;
 }
 
-
+/*fin-actividades*/
 
 
 
