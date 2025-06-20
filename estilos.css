@@ -1315,7 +1315,7 @@ strong {
   /*cierre contacto*/
 
 
-}  @media screen and (max-width: 600px) {
+}@media screen and (max-width: 600px) {
 
   /* Estilos para #presentación */
   #presentación {
