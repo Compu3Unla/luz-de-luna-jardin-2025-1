@@ -6,10 +6,8 @@
   padding: 0;
 }
 
-.body-index header,
-.body-index main,
-.body-index footer {
-  display: none;
+ .oculto {
+  display: none !important;
 }
 
 header {
