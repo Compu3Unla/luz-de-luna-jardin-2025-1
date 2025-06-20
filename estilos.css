@@ -1228,7 +1228,7 @@ strong {
   /*contacto*/
   .nav-button {
     font-family: 'Baloo 2', cursive;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 14px;
     text-decoration: none;
     color: #F9FAE5;
@@ -1240,17 +1240,26 @@ strong {
     display: none;
   }
 
+
   .contacto-sedes img {
     max-width: 235px;
     max-height: 300px;
     /* o lo que necesites */
+    width: 100%;
     height: auto;
     object-fit: cover;
   }
 
+  .contacto-sedes {
+    padding-top: 10px;
+  }
+
   .textos-info-sedes1 {
     flex-direction: column;
+  }
 
+  .textos-info-sedes2 {
+    flex-direction: column;
   }
 
   .contact-container {
@@ -1273,12 +1282,7 @@ strong {
 
   .contact-info div {
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .contact-info div {
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
   }
